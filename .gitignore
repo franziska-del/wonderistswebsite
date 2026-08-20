@@ -1,0 +1,7 @@
+node_modules/
+dist/
+tmp/
+.DS_Store
+desktop-*.png
+mobile-*.png
+final-*.png
