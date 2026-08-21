@@ -5,3 +5,4 @@ tmp/
 desktop-*.png
 mobile-*.png
 final-*.png
+.vercel
