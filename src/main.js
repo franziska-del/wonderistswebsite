@@ -38,6 +38,7 @@ const adventures = [
     number: '04',
     title: 'The Wonderists: Next Gen',
     cta: 'Explore Next Gen',
+    href: '/next-gen/',
     image: '/assets/next-gen.webp',
     description:
       'An adventure for entrepreneurial parents and the next generation. Step away from the usual routine and take on new challenges side by side. Get curious, try things you haven’t done before, practise the skills most useful for the future, meet interesting people and create the kind of stories your kids will still remember years from now.',
@@ -51,9 +52,9 @@ const adventureCard = (adventure, featured = false) => `
     <div class="adventure-card__content">
       <span class="adventure-number">${adventure.number}</span>
       <h3>${adventure.title}</h3>
-      <button class="text-link text-link--light js-adventure" data-adventure="${adventure.id}">
-        ${adventure.cta}${arrowIcon}
-      </button>
+      ${adventure.href
+        ? `<a class="text-link text-link--light" href="${adventure.href}">${adventure.cta}${arrowIcon}</a>`
+        : `<button class="text-link text-link--light js-adventure" data-adventure="${adventure.id}">${adventure.cta}${arrowIcon}</button>`}
     </div>
   </article>`;
 
