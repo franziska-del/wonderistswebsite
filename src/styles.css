@@ -930,12 +930,11 @@ h3 {
 
   .menu-button {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     width: 3rem;
     height: 3rem;
     display: grid;
-    align-content: center;
-    gap: 0.34rem;
+    place-items: center;
     padding: 0.7rem;
     border: 0;
     background: transparent;
@@ -943,15 +942,25 @@ h3 {
   }
 
   .menu-button span:not(.sr-only) {
-    width: 100%;
+    position: absolute;
+    width: 1.6rem;
     height: 2px;
     display: block;
     background: currentColor;
-    transition: transform 220ms ease, opacity 220ms ease;
+    transform-origin: center;
+    transition: transform 220ms ease, opacity 180ms ease;
+  }
+
+  .menu-button span:nth-child(1) {
+    transform: translateY(-0.42rem);
+  }
+
+  .menu-button span:nth-child(3) {
+    transform: translateY(0.42rem);
   }
 
   .menu-button[aria-expanded='true'] span:nth-child(1) {
-    transform: translateY(0.45rem) rotate(45deg);
+    transform: rotate(45deg);
   }
 
   .menu-button[aria-expanded='true'] span:nth-child(2) {
@@ -959,7 +968,7 @@ h3 {
   }
 
   .menu-button[aria-expanded='true'] span:nth-child(3) {
-    transform: translateY(-0.45rem) rotate(-45deg);
+    transform: rotate(-45deg);
   }
 
   .site-nav {
@@ -970,27 +979,38 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 1.2rem;
-    padding: 7rem var(--page-gutter) 4rem;
+    gap: clamp(0.85rem, 3vh, 1.2rem);
+    min-height: 100dvh;
+    padding: max(6.5rem, env(safe-area-inset-top)) var(--page-gutter) max(2rem, env(safe-area-inset-bottom));
+    overflow-y: auto;
+    overscroll-behavior: contain;
     background: var(--sand);
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 220ms ease, visibility 220ms ease;
+    transform: translateY(-0.75rem);
+    transition: opacity 220ms ease, transform 220ms var(--ease), visibility 220ms ease;
   }
 
   .site-nav.is-open {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
+    transform: translateY(0);
   }
 
   .site-nav a,
   .nav-cta {
-    font-size: clamp(2.6rem, 10vw, 4.6rem);
+    max-width: 100%;
+    font-size: clamp(2.1rem, 10vw, 4.6rem);
     font-weight: 400;
     line-height: 1.05;
     letter-spacing: -0.04em;
+  }
+
+  .site-nav a:focus-visible,
+  .nav-cta:focus-visible {
+    outline-offset: 0.35rem;
   }
 
   .hero {
@@ -1074,6 +1094,24 @@ h3 {
 }
 
 @media (max-width: 600px) {
+  .site-header {
+    padding-top: max(0.65rem, env(safe-area-inset-top));
+  }
+
+  .brand {
+    width: min(12.5rem, calc(100vw - 6.5rem));
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+    padding-top: max(10rem, calc(env(safe-area-inset-top) + 8rem));
+  }
+
+  .site-nav a,
+  .nav-cta {
+    font-size: clamp(2rem, 11vw, 3.6rem);
+  }
+
   .hero h1 {
     font-size: clamp(3.7rem, 17vw, 5rem);
   }

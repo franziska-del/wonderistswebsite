@@ -228,20 +228,42 @@ const dialogDescription = document.querySelector('#dialog-description');
 const interestSelect = document.querySelector('#interest-select');
 const form = document.querySelector('#interest-form');
 
-const closeMenu = () => {
-  menuButton.setAttribute('aria-expanded', 'false');
-  nav.classList.remove('is-open');
-  document.body.classList.remove('menu-open');
+const menuLabel = menuButton.querySelector('.sr-only');
+const menuItems = [...nav.querySelectorAll('a, button')];
+
+const setMenuState = (isOpen, { returnFocus = false } = {}) => {
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+  menuLabel.textContent = isOpen ? 'Close menu' : 'Open menu';
+  nav.classList.toggle('is-open', isOpen);
+  document.body.classList.toggle('menu-open', isOpen);
+
+  if (isOpen) {
+    menuItems[0]?.focus({ preventScroll: true });
+  } else if (returnFocus) {
+    menuButton.focus({ preventScroll: true });
+  }
 };
 
+const closeMenu = () => setMenuState(false);
+
 menuButton.addEventListener('click', () => {
-  const nextState = menuButton.getAttribute('aria-expanded') !== 'true';
-  menuButton.setAttribute('aria-expanded', String(nextState));
-  nav.classList.toggle('is-open', nextState);
-  document.body.classList.toggle('menu-open', nextState);
+  const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+  setMenuState(!isOpen);
 });
 
 nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+    setMenuState(false, { returnFocus: true });
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 820 && menuButton.getAttribute('aria-expanded') === 'true') {
+    closeMenu();
+  }
+});
 
 document.querySelectorAll('.js-adventure').forEach((button) => {
   button.addEventListener('click', () => {
