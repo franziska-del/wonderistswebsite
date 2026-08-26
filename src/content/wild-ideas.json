@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "WILD IDEAS — A parent and child adventure",
+    "description": "A three-day parent and child adventure to turn a wild idea into something real, at Coolamon Station in the Northern Rivers Hinterland."
+  },
+  "navigation": {
+    "experience": "The experience",
+    "whyItWorks": "Why it works",
+    "hosts": "Meet your hosts",
+    "book": "Book your place"
+  },
+  "hero": {
+    "title": "WILD IDEAS",
+    "subtitle": "A parent and child adventure to turn a wild idea into something real.",
+    "dates": "Friday 20 to Sunday 22 November 2026",
+    "location": "Coolamon Station, Northern Rivers Hinterland, NSW",
+    "attribution": "Created by Best Life Adventures and The Wonderists",
+    "primaryCta": "Book your place",
+    "secondaryCta": "Explore the experience",
+    "image": "/assets/next-gen.webp",
+    "imageAlt": "A parent and child walking together in the Northern Rivers hinterland",
+    "caption": "Coolamon Station · Northern Rivers Hinterland"
+  },
+  "intro": {
+    "label": "The experience",
+    "title": "Help your child discover what they’re capable of.",
+    "body": [
+      "The world your child is growing into will reward more than knowledge.",
+      "They’ll need curiosity, courage and resourcefulness. They’ll need to think for themselves, communicate their ideas, adapt when things go wrong and keep moving when the path ahead isn’t obvious.",
+      "Those abilities grow through experience. They emerge when children face something unfamiliar, solve a real problem and discover that they can create something of their own.",
+      "WILD IDEAS is a three-day adventure for parents and their children.",
+      "Together, you’ll cycle the Northern Rivers Rail Trail, build a wilderness camp, cook over fire, explore the night sky and charter a private vessel to snorkel with turtles.",
+      "Along the way, your child will begin turning something they care about into their first entrepreneurial venture."
+    ],
+    "statement": "Just the two of you building courage, capability and an idea together."
+  },
+  "facts": [
+    { "label": "Dates", "value": "20–22 Nov 2026" },
+    { "label": "Stay", "value": "2 nights" },
+    { "label": "Price", "value": "$2,900 per pair" },
+    { "label": "Ages", "value": "8 to 14" }
+  ],
+  "futureSkills": {
+    "label": "Learning through adventure",
+    "title": "Adventure is where future skills become real.",
+    "body": [
+      "Children can learn about resilience in a classroom. It becomes real when the fire won’t catch, the shelter needs another attempt or their legs are telling them to stop halfway through a bike ride.",
+      "Self-belief grows more powerfully when they look back at something difficult and realise, I did that.",
+      "WILD IDEAS gives children the chance to practise the skills they’ll need for the future in a setting where their decisions have meaning."
+    ],
+    "image": "/assets/next-gen/navigation.jpg",
+    "imageAlt": "A parent and child learning outdoor navigation together",
+    "caption": "Real challenge. Real decisions. Real growth."
+  },
+  "experience": {
+    "label": "Across the weekend",
+    "title": "Three days of wild ideas and real adventure.",
+    "intro": "WILD IDEAS brings together hands-on adventure, meaningful parent-child connection and entrepreneurial learning in the spectacular Northern Rivers Hinterland.",
+    "items": [
+      "Cycle together along the Northern Rivers Rail Trail",
+      "Learn bushcraft, shelter building, knot tying and fire craft",
+      "Build a wilderness camp using limited resources",
+      "Prepare and share a communal dinner cooked over the fire",
+      "Explore Coolamon Station on a guided nocturnal critter walk",
+      "Look for problems, possibilities and ideas worth exploring",
+      "Develop the foundations of your child’s first entrepreneurial venture",
+      "Reflect on what you’ve discovered and create a plan for taking the idea home",
+      "Charter a private vessel to snorkel with turtles at Cook Island",
+      "Spend uninterrupted time together, away from screens and everyday distractions."
+    ],
+    "outro": "There will be fresh air, dirty hands, tired legs, new friendships, campfire conversations and those glorious belly laughs that tend to appear when people do something slightly uncomfortable together."
+  },
+  "venture": {
+    "label": "Entrepreneurial learning",
+    "title": "From a wild idea to their first venture.",
+    "body": [
+      "Every meaningful venture begins with someone paying attention.",
+      "They notice a problem. They care about something that could be better. They ask a question other people haven’t asked yet.",
+      "Throughout the weekend, your child will explore what matters to them, look for problems worth solving and begin developing an age-appropriate venture of their own.",
+      "It could be a product, a service, a community initiative, an environmental project or something wonderfully unexpected."
+    ],
+    "items": [
+      "Notice opportunities in the world around them",
+      "Ask better questions",
+      "Explore the things they genuinely care about",
+      "Turn an interest or problem into an idea",
+      "Consider who their idea could help",
+      "Explain why the idea matters",
+      "Receive constructive feedback from successful entrepreneurs",
+      "Make decisions and adjust when something isn’t working",
+      "Communicate their idea with greater confidence",
+      "Choose one practical next step to take after the weekend"
+    ],
+    "outro": "By the end of the adventure, they’ll have the beginnings of a venture, a plan for what comes next and something even more valuable: evidence that they can create, contribute and take action."
+  },
+  "reasons": {
+    "label": "Why WILD IDEAS works",
+    "title": "The learning is lived.",
+    "items": [
+      {
+        "title": "You become a team",
+        "body": [
+          "Shared challenges create a different kind of connection.",
+          "Building a shelter, navigating uncertainty and developing an idea require you to listen to each other, make decisions together and use both of your strengths.",
+          "Your child experiences the feeling of having you fully beside them. You get to step into their imagination and see the world through their eyes.",
+          "The things you accomplish together become part of your shared story long after the weekend ends."
+        ]
+      },
+      {
+        "title": "Better conversations have somewhere to begin",
+        "body": [
+          "Some conversations are difficult to force around the dinner table.",
+          "Campfire prompts, guided reflection and time away from everyday logistics create natural openings to talk about courage, ideas, responsibility, failure and the future.",
+          "You might discover what your child worries about, what they dream about or what they quietly believe they’re capable of.",
+          "These conversations don’t need to be heavy or perfectly articulated. Sometimes they begin with a ridiculous idea, a shared mistake or a question asked beneath a sky full of stars."
+        ]
+      },
+      {
+        "title": "Courage grows somewhere unfamiliar",
+        "body": [
+          "Nature makes the experience real.",
+          "The weather may change. The fire may refuse to catch. The shelter may need another attempt.",
+          "Children learn to adapt, ask for help, make decisions and keep going. Mistakes become part of the process of figuring things out.",
+          "Then comes the moment that matters. Something that once felt uncertain becomes something they’ve actually done.",
+          "That experience builds outdoor confidence while also developing the curiosity, resourcefulness and self-belief required to bring an idea into the world."
+        ]
+      },
+      {
+        "title": "The learning is lived",
+        "body": [
+          "The people leading WILD IDEAS have built businesses, led expeditions, taught in the outdoors and navigated moments when the original plan fell apart.",
+          "They’ll share the wins, the mistakes and the lessons that only arrive through experience.",
+          "Children discover that capable people don’t always know the answer. They pay attention, ask questions, try something, learn and adapt.",
+          "The learning becomes memorable because it is attached to something they felt, attempted and experienced for themselves."
+        ]
+      }
+    ]
+  },
+  "inclusions": {
+    "label": "What’s included",
+    "title": "Everything you need to go all in.",
+    "items": [
+      "Three days of facilitated parent and child adventure",
+      "Two nights of private glamping at Coolamon Station",
+      "All meals throughout the weekend",
+      "Guided cycling on the Northern Rivers Rail Trail",
+      "Specialist-led bushcraft and wilderness activities",
+      "Shelter building, knot tying and fire craft",
+      "Communal campfire cooking",
+      "Guided nocturnal critter walk",
+      "Private vessel charter to Cook Island",
+      "Guided snorkelling experience",
+      "Entrepreneurial workshops for parents and children",
+      "Guided reflection and venture planning",
+      "Post-weekend entrepreneurial support sessions",
+      "All required specialist equipment for programmed activities"
+    ],
+    "suitability": "Suitable for children aged 8 to 14."
+  },
+  "hosts": {
+    "label": "Meet your hosts",
+    "title": "Built by people who know how to learn out loud.",
+    "items": [
+      {
+        "name": "Ben Southall",
+        "body": [
+          "Ben Southall has spent much of his life taking people somewhere harder than they might go alone: across Africa, into the Arctic Circle and through the Himalayas.",
+          "He is an adventurer, storyteller and winner of Tourism Queensland’s Best Job in the World, selected from more than 35,000 applicants.",
+          "For Ben, adventure has never simply been about collecting wild destinations. It is about what happens when people step beyond the familiar together.",
+          "Around a campfire, in the middle of a challenge or beneath a sky full of stars, the usual distractions fall away. Conversations change. Laughter comes more easily. People discover what they’re capable of.",
+          "Ben brings that philosophy to WILD IDEAS, helping parents and children approach uncertainty with courage, curiosity and a willingness to have a go."
+        ]
+      },
+      {
+        "name": "Nic Thomas",
+        "body": [
+          "Nic is a passionate educator and entrepreneur who believes curiosity and problem-solving sit at the heart of every great business idea.",
+          "Together with the team at Scope Training, Nic has built a business around helping people develop practical skills, expand what they believe is possible and create meaningful opportunities.",
+          "There is nowhere he enjoys doing that more than with young, emerging entrepreneurs.",
+          "Nic understands that entrepreneurial children aren’t simply born with brilliant business ideas. They learn to pay attention, ask better questions, tackle challenges and keep exploring when the answer isn’t immediately obvious.",
+          "When he isn’t sparking that entrepreneurial spirit in others, you’ll find him travelling somewhere new or catching a wave, staying as curious about the world as he encourages young people to be."
+        ]
+      },
+      {
+        "name": "Innes",
+        "body": [
+          "Innes is a teacher with a Master’s degree in Outdoor Education who turns bushcraft and wilderness skills into engaging, hands-on adventures.",
+          "His approach allows children to learn through doing. They’ll tie knots, build shelter, create tools, prepare food and solve problems using limited resources.",
+          "Innes creates an environment where children can test themselves safely, experience the consequences of their decisions and feel the quiet pride that comes from mastering something new."
+        ]
+      }
+    ]
+  },
+  "audience": {
+    "label": "Who it’s for",
+    "title": "Curious is enough.",
+    "intro": "WILD IDEAS is for parents who want to:",
+    "items": [
+      "Spend meaningful one-on-one time with their child",
+      "Help their child become more confident and resourceful",
+      "Encourage curiosity without turning it into another lesson",
+      "Give their child practical experience of developing an idea",
+      "Create memories through shared challenge and adventure",
+      "Learn more about the person their child is becoming",
+      "Raise a child who believes they can contribute to the world"
+    ],
+    "outro": "Your child doesn’t need to be outgoing, fearless or already interested in business. They simply need to be curious and willing to have a go."
+  },
+  "closing": {
+    "label": "The beginning of something bigger",
+    "title": "They may leave standing a little taller.",
+    "body": [
+      "Your child may leave WILD IDEAS with the beginning of a product, a service, an environmental project or an idea nobody saw coming.",
+      "They may also leave standing a little taller.",
+      "And you’ll leave with a deeper understanding of what lights them up, how they approach uncertainty and who they might be becoming."
+    ],
+    "cta": "Book your WILD IDEAS adventure now."
+  },
+  "booking": {
+    "label": "Book your place",
+    "title": "Make this your shared story.",
+    "dates": "Friday 20 to Sunday 22 November 2026",
+    "location": "Coolamon Station, Northern Rivers Hinterland, NSW",
+    "price": "$2,900 per parent and child pair",
+    "includes": "Includes accommodation, all meals, scheduled activities, specialist-led experiences, entrepreneurial workshops and post-weekend support sessions.",
+    "capacity": "Limited to 10 parent and child pairs.",
+    "formCta": "Book your place",
+    "success": "Thanks — your place enquiry is in. We’ll be in touch with the booking details."
+  }
+}

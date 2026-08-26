@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "The Wonderists — Fully alive, while alive.",
+    "description": "The Wonderists creates adventures and tools for entrepreneurs who want to stay curious, test their edges and feel more alive."
+  },
+  "navigation": {
+    "adventures": "Adventures",
+    "wondercards": "Wondercards",
+    "philosophy": "The Philosophy",
+    "contact": "Say Hi"
+  },
+  "hero": {
+    "title": "Fully alive,\nwhile alive.",
+    "body": [
+      "The Wonderists creates adventures and tools for entrepreneurs who want to stay curious, test their edges and feel more alive.",
+      "Choose adventures that challenge you. Ask better questions. Spend time with interesting, curious people who make you think differently."
+    ],
+    "primaryCta": "Explore Adventures",
+    "secondaryCta": "Discover Wondercards",
+    "image": "/assets/hero.webp",
+    "imageAlt": "A motorcyclist paused above a winding coastal road",
+    "caption": "There is more life beyond business as usual."
+  },
+  "manifesto": {
+    "texture": "Stay awake.",
+    "title": "Being alive and feeling alive are not the same thing.",
+    "body": [
+      "It’s easy for life to become a list of things that need your attention.",
+      "The business needs you. People rely on you. The calendar fills up. And the adventurous, curious part of you keeps getting told, “maybe later”.",
+      "The Wonderists create experiences that take you somewhere unfamiliar, put you around interesting people and ask you to stretch beyond what you already know in order to grow.",
+      "Sometimes physically. Sometimes intellectually. Sometimes simply by having a conversation you wouldn’t normally have."
+    ],
+    "statement": "Your business gets your attention.",
+    "statementStrong": "Your life should too."
+  },
+  "adventures": {
+    "title": "Choose your\nnext adventure.",
+    "intro": "Small-group experiences for entrepreneurs who want challenge, friendship and a few stories worth telling.",
+    "items": [
+      {
+        "id": "uganda",
+        "number": "01",
+        "title": "Explore Uganda by motorbike",
+        "cta": "Explore Uganda",
+        "href": "",
+        "image": "/assets/uganda.webp",
+        "description": "Travel through Uganda by motorcycle with a small group of entrepreneurs. Ride through unfamiliar territory, experience the country beyond the usual tourist trail and connect with local people and projects along the way."
+      },
+      {
+        "id": "new-zealand",
+        "number": "02",
+        "title": "Explore New Zealand by motorbike",
+        "cta": "Explore New Zealand",
+        "href": "",
+        "image": "/assets/new-zealand.webp",
+        "description": "A motorcycle adventure through one of the world’s greatest riding destinations. Breathtaking landscapes, incredible roads and the kind of business conversations that happen when everyone has stepped away from business as usual."
+      },
+      {
+        "id": "mentawai",
+        "number": "03",
+        "title": "Surf the Mentawai Islands",
+        "cta": "Explore Mentawai",
+        "href": "",
+        "image": "/assets/mentawai.webp",
+        "description": "Leave the boardroom behind and head for one of the world’s most celebrated surf regions on a luxury boat. Days in the water. Evenings with an intimate group of entrepreneurs. Time to think, talk and remember what it feels like to be completely absorbed in something."
+      },
+      {
+        "id": "wild-ideas",
+        "number": "04",
+        "title": "WILD IDEAS",
+        "cta": "Explore Wild Ideas",
+        "href": "/wild-ideas/",
+        "image": "/assets/next-gen.webp",
+        "description": "A parent and child adventure to turn a wild idea into something real. Step away from the usual routine and take on new challenges side by side. Get curious, try things you haven’t done before, practise the skills most useful for the future, meet interesting people and create the kind of stories your kids will still remember years from now."
+      }
+    ]
+  },
+  "adventureStory": {
+    "title": "Adventure changes the conversation.",
+    "body": [
+      "The Wonderists brings together people who love adventures, discovering new things and building successful businesses at the same time.",
+      "Each adventure combines challenge, curiosity, interesting people and meaningful encounters with the places we visit.",
+      "You’ll come for the adventure. You may leave with new friends, a clearer head and a bigger sense of what’s possible."
+    ]
+  },
+  "wondercards": {
+    "title": "Bring a little wonder into ordinary life.",
+    "body": [
+      "Wondercards are conversation cards designed to get people curious, talking and beyond the usual surface-level stuff.",
+      "They are perfectly used with your family, friends, partners, teams or randos you just met.",
+      "Each card asks a question that might make you laugh, think, reveal something unexpected or see someone differently.",
+      "Think of them as the everyday version of a Wonderists adventure."
+    ],
+    "shipping": "Shipping available worldwide.",
+    "cta": "Discover Wondercards",
+    "unspokenCta": "Explore Unspoken cards",
+    "unspokenUrl": "https://unspoken.one/product/convos-with-randos-og-deck/",
+    "image": "/assets/wondercards.webp",
+    "imageAlt": "Wondercards conversation card deck and four question cards"
+  },
+  "philosophy": {
+    "title": "Stay curious.\nStay courageous.\nStay connected.",
+    "body": [
+      "The more we automate, optimise and outsource, the more valuable it becomes to think for ourselves.",
+      "Wonderism is a philosophy built around curiosity, courage and connection.",
+      "Question what you’ve accepted. Try things you might fail at. Spend time with people who challenge your thinking. Go somewhere unfamiliar. Stay open to changing your mind.",
+      "We don’t have all the answers. We’d rather go and find out."
+    ],
+    "definitions": [
+      {
+        "term": "Wonderism*",
+        "definition": "The philosophy of staying awake to life, living fully alive."
+      },
+      {
+        "term": "Wonderist*",
+        "definition": "Someone who chooses curiosity over certainty, courage over comfort, presence over distraction, and aliveness over autopilot."
+      }
+    ]
+  },
+  "closing": {
+    "title": "Your life is\nhappening now.",
+    "body": "There will always be another deadline, another responsibility and another reason to wait.",
+    "statement": "Choose the experience that makes you a little nervous.\nWe’ll meet you there.",
+    "primaryCta": "Explore adventures",
+    "secondaryCta": "Discover Wondercards"
+  },
+  "contact": {
+    "defaultTitle": "Say hi.",
+    "defaultDescription": "Tell us what you’re curious about. We’d love to hear from you.",
+    "wondercardsTitle": "Bring a little wonder into ordinary life.",
+    "wondercardsDescription": "Tell us where in the world your Wondercards should travel.",
+    "formCta": "Count me curious",
+    "success": "You’re on the list. We’ll meet you there."
+  },
+  "footer": {
+    "instagramLabel": "Instagram",
+    "instagramUrl": "",
+    "linkedinLabel": "LinkedIn",
+    "linkedinUrl": ""
+  }
+}

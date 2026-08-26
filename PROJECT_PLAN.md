@@ -8,7 +8,7 @@ Launch a distinctive, responsive single-page website that introduces The Wonderi
 
 1. Header and hero — core proposition and two primary paths.
 2. Manifesto — the tension between being alive and feeling alive.
-3. Adventures — Uganda, New Zealand, Mentawai Islands, and Next Gen.
+3. Adventures — Uganda, New Zealand, Mentawai Islands, and WILD IDEAS.
 4. Adventure philosophy — the people and outcomes behind the experiences.
 5. Wondercards — product story and worldwide shipping.
 6. Wonderism — philosophy and definitions.
@@ -25,9 +25,10 @@ Launch a distinctive, responsive single-page website that introduces The Wonderi
 ## Content decisions
 
 - Public-facing copy from pages 1–4 is used as the source of truth.
-- The public Next Gen summary is included.
-- Internal or drafting material is not published, including “WIP,” personal follow-up notes, and planning commentary.
+- The public WILD IDEAS summary and dedicated experience page are included.
+- Internal or drafting material is not published, including the “WIP - Next Gen” itinerary, personal follow-up notes, and planning commentary.
 - Obvious source typo “curisosity” is corrected to “curiosity.”
+- Public copy is stored in structured JSON and exposed through Pages CMS for Git-backed editing.
 
 ## Build and QA
 
