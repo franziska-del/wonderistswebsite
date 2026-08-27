@@ -25,18 +25,29 @@ The production output is written to `dist/`.
 - Semantic HTML
 - Modern CSS
 - Vanilla JavaScript
-- Pages CMS for Git-backed copy editing
+- Sanity CMS with a simplified editor at `/admin` and advanced Studio at `/studio`
 - Locally bundled Outfit font and optimized WebP imagery
 
 See [PROJECT_PLAN.md](./PROJECT_PLAN.md) for the page structure, visual system, and content decisions.
 
-## Editing copy
+## Editing content with Sanity
 
-The public copy lives in `src/content/home.json` and `src/content/wild-ideas.json`. Both files are configured for a friendly browser editor in `.pages.yml`.
+The public site reads published content from Sanity and falls back to
+`src/content/home.json` and `src/content/wild-ideas.json` if Sanity has not been
+connected yet or is unavailable.
 
-1. Go to [Pages CMS](https://app.pagescms.org/).
-2. Sign in with GitHub and install the Pages CMS GitHub App for `SPL4D/the-wonderists`.
-3. Open the repository and choose **Website copy**.
-4. Edit either **Main page** or **WILD IDEAS page**, then save.
+1. Create a Sanity project with a public `production` dataset.
+2. Copy `.env.example` to `.env.local` and add the project ID to both
+   `VITE_SANITY_PROJECT_ID` and `SANITY_STUDIO_PROJECT_ID`.
+3. Add the same environment variables in Vercel.
+4. Run `pnpm seed` once to import the current website copy.
+5. Open `/admin` on the deployed site and use the shared admin password.
+   `/studio` remains available for advanced changes with Sanity login.
 
-Pages CMS writes the edited JSON back to GitHub. Vercel then rebuilds the static site from the updated content. No separate content database is required.
+Publish changes in Studio to make them visible on the public site. Image fields
+support Sanity uploads while retaining the current local site image as a fallback.
+The `/admin` editor uses a signed, eight-hour password session and keeps its
+Sanity write token server-side. The advanced `/studio` editor uses Sanity login.
+
+For browser-side content reads, add the local and production site origins in
+Sanity Manage under **API → CORS origins**.

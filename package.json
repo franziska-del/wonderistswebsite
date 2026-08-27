@@ -5,8 +5,19 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "dev:studio": "sanity dev --host 0.0.0.0",
+    "build": "vite build && sanity build dist/cms --yes",
+    "build:site": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "seed:prepare": "node scripts/generate-sanity-seed.mjs",
+    "seed": "pnpm run seed:prepare && sanity dataset import sanity-seed/wonderists-seed.ndjson --dataset production --replace"
+  },
+  "dependencies": {
+    "@sanity/client": "^7.22.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "sanity": "^5.26.0",
+    "styled-components": "^6.5.3"
   },
   "devDependencies": {
     "vite": "^7.1.3"

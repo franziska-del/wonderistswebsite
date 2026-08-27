@@ -28,7 +28,7 @@ Launch a distinctive, responsive single-page website that introduces The Wonderi
 - The public WILD IDEAS summary and dedicated experience page are included.
 - Internal or drafting material is not published, including the “WIP - Next Gen” itinerary, personal follow-up notes, and planning commentary.
 - Obvious source typo “curisosity” is corrected to “curiosity.”
-- Public copy is stored in structured JSON and exposed through Pages CMS for Git-backed editing.
+- Public copy is managed in Sanity through the simplified `/admin` control room or the advanced `/studio` editor, with structured JSON retained as a safe fallback.
 
 ## Build and QA
 

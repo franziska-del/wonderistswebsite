@@ -1,6 +1,9 @@
 node_modules/
 dist/
 tmp/
+.sanity/
+.env.local
+.env.*.local
 .DS_Store
 desktop-*.png
 mobile-*.png

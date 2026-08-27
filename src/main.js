@@ -1,5 +1,8 @@
 import './styles.css';
-import content from './content/home.json';
+import fallbackContent from './content/home.json';
+import { loadHomePage } from './sanity/content';
+
+const content = await loadHomePage(fallbackContent);
 
 const escapeHtml = (value = '') => String(value)
   .replaceAll('&', '&amp;')
