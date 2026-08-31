@@ -17,8 +17,8 @@
     "attribution": "Created by Best Life Adventures and The Wonderists",
     "primaryCta": "Book your place",
     "secondaryCta": "Explore the experience",
-    "image": "/assets/next-gen.webp",
-    "imageAlt": "A parent and child walking together in the Northern Rivers hinterland",
+    "image": "/assets/wild-ideas.jpg",
+    "imageAlt": "An outdoor leader showing a child how to make a bow in the Northern Rivers hinterland",
     "caption": "Coolamon Station · Northern Rivers Hinterland"
   },
   "intro": {
@@ -224,6 +224,8 @@
     "price": "$2,900 per parent and child pair",
     "includes": "Includes accommodation, all meals, scheduled activities, specialist-led experiences, entrepreneurial workshops and post-weekend support sessions.",
     "capacity": "Limited to 10 parent and child pairs.",
+    "flyerCta": "Download the retreat flyer (PDF)",
+    "flyerUrl": "/downloads/wild-ideas-retreat-flyer.pdf",
     "formCta": "Book your place",
     "success": "Thanks — your place enquiry is in. We’ll be in touch with the booking details."
   }

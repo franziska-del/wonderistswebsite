@@ -781,6 +781,10 @@
   font-size: clamp(1rem, 1.3vw, 1.22rem);
 }
 
+.wi-flyer-link {
+  margin-top: 1rem;
+}
+
 @media (max-width: 1100px) {
   .ng-hero h1 {
     font-size: clamp(3.7rem, 6.6vw, 5.8rem);

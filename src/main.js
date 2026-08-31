@@ -22,7 +22,19 @@ const arrowIcon = `
     <path d="M1 8h27M21 1l7 7-7 7" />
   </svg>`;
 
-const adventures = content.adventures.items;
+const wildIdeasFallback = fallbackContent.adventures.items.find((item) => item.id === 'wild-ideas');
+const adventures = [...content.adventures.items]
+  .map((item) => (
+    item.id === 'wild-ideas' && item.image === '/assets/next-gen.webp'
+      ? { ...item, image: wildIdeasFallback.image }
+      : item
+  ))
+  .sort((first, second) => {
+    if (first.id === 'wild-ideas') return -1;
+    if (second.id === 'wild-ideas') return 1;
+    return 0;
+  })
+  .map((item, index) => ({ ...item, number: String(index + 1).padStart(2, '0') }));
 
 const adventureCard = (adventure, featured = false) => `
   <article class="adventure-card ${featured ? 'adventure-card--featured' : ''} reveal">
@@ -108,8 +120,13 @@ document.querySelector('#app').innerHTML = `
         <p class="shipping">${escapeHtml(content.wondercards.shipping)}</p>
         <div class="button-row">
           <button class="button button--sand js-contact" type="button" data-interest="Wondercards">${escapeHtml(content.wondercards.cta)}</button>
-          <a class="button button--ghost-light" href="${escapeHtml(content.wondercards.unspokenUrl)}" target="_blank" rel="noreferrer">${escapeHtml(content.wondercards.unspokenCta)}</a>
         </div>
+        <aside class="unspoken-card">
+          <p class="unspoken-card__eyebrow">Also from The Wonderists</p>
+          <h3>${escapeHtml(content.wondercards.unspokenTitle)}</h3>
+          <p>${escapeHtml(content.wondercards.unspokenBody)}</p>
+          <a class="text-link text-link--light" href="${escapeHtml(content.wondercards.unspokenUrl)}" target="_blank" rel="noreferrer">${escapeHtml(content.wondercards.unspokenCta)}${arrowIcon}</a>
+        </aside>
       </div>
       <div class="wondercards__media reveal">
         <img src="${escapeHtml(content.wondercards.image)}" loading="lazy" alt="${escapeHtml(content.wondercards.imageAlt)}" />

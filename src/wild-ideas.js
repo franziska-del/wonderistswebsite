@@ -183,6 +183,7 @@ document.querySelector('#app').innerHTML = `
           <p>${escapeHtml(content.booking.includes)}</p>
           <p><strong>${escapeHtml(content.booking.capacity)}</strong></p>
         </div>
+        <a class="button button--ghost-light wi-flyer-link" href="${escapeHtml(content.booking.flyerUrl)}" target="_blank" rel="noreferrer">${escapeHtml(content.booking.flyerCta)}</a>
       </div>
       <form class="ng-register__form reveal" id="wild-ideas-form">
         <label>Your name<input type="text" name="name" autocomplete="name" required /></label>

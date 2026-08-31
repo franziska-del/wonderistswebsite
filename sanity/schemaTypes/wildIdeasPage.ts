@@ -141,6 +141,8 @@ export const wildIdeasPage = defineType({
       stringField('price', 'Price'),
       textField('includes', 'Included summary'),
       stringField('capacity', 'Capacity'),
+      stringField('flyerCta', 'Flyer button label'),
+      stringField('flyerUrl', 'Flyer PDF path or URL'),
       stringField('formCta', 'Form button'),
       textField('success', 'Success message'),
     ], 'booking'),

@@ -79,6 +79,8 @@ export const homePage = defineType({
       paragraphsField(),
       stringField('shipping', 'Shipping note'),
       stringField('cta', 'Wondercards button'),
+      stringField('unspokenTitle', 'Unspoken cards heading'),
+      textField('unspokenBody', 'Unspoken cards description'),
       stringField('unspokenCta', 'Unspoken button'),
       stringField('unspokenUrl', 'Unspoken deck URL'),
       imageField(),

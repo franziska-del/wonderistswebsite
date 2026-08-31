@@ -38,8 +38,17 @@
     "intro": "Small-group experiences for entrepreneurs who want challenge, friendship and a few stories worth telling.",
     "items": [
       {
-        "id": "uganda",
+        "id": "wild-ideas",
         "number": "01",
+        "title": "WILD IDEAS",
+        "cta": "Explore Wild Ideas",
+        "href": "/wild-ideas/",
+        "image": "/assets/wild-ideas.jpg",
+        "description": "A parent and child adventure to turn a wild idea into something real. Step away from the usual routine and take on new challenges side by side. Get curious, try things you haven’t done before, practise the skills most useful for the future, meet interesting people and create the kind of stories your kids will still remember years from now."
+      },
+      {
+        "id": "uganda",
+        "number": "02",
         "title": "Explore Uganda by motorbike",
         "cta": "Explore Uganda",
         "href": "",
@@ -48,7 +57,7 @@
       },
       {
         "id": "new-zealand",
-        "number": "02",
+        "number": "03",
         "title": "Explore New Zealand by motorbike",
         "cta": "Explore New Zealand",
         "href": "",
@@ -57,21 +66,12 @@
       },
       {
         "id": "mentawai",
-        "number": "03",
+        "number": "04",
         "title": "Surf the Mentawai Islands",
         "cta": "Explore Mentawai",
         "href": "",
         "image": "/assets/mentawai.webp",
         "description": "Leave the boardroom behind and head for one of the world’s most celebrated surf regions on a luxury boat. Days in the water. Evenings with an intimate group of entrepreneurs. Time to think, talk and remember what it feels like to be completely absorbed in something."
-      },
-      {
-        "id": "wild-ideas",
-        "number": "04",
-        "title": "WILD IDEAS",
-        "cta": "Explore Wild Ideas",
-        "href": "/wild-ideas/",
-        "image": "/assets/next-gen.webp",
-        "description": "A parent and child adventure to turn a wild idea into something real. Step away from the usual routine and take on new challenges side by side. Get curious, try things you haven’t done before, practise the skills most useful for the future, meet interesting people and create the kind of stories your kids will still remember years from now."
       }
     ]
   },
@@ -93,6 +93,8 @@
     ],
     "shipping": "Shipping available worldwide.",
     "cta": "Discover Wondercards",
+    "unspokenTitle": "Unspoken cards",
+    "unspokenBody": "A conversation card deck for the questions you do not usually ask. Made to take a chat beyond the usual small talk.",
     "unspokenCta": "Explore Unspoken cards",
     "unspokenUrl": "https://unspoken.one/product/convos-with-randos-og-deck/",
     "image": "/assets/wondercards.webp",
