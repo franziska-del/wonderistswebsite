@@ -1,0 +1,9 @@
+# Local client documents and one-off generation helpers are not part of the website.
+The_Wonderists_Deposit_Invoice.docx
+The_Wonderists_Deposit_Invoice.pdf
+The_Wonderists_Website_Project_Plan_and_Quote.docx
+The_Wonderists_Website_Quote.pdf
+build_wonderists_invoice.py
+build_wonderists_plain_quote.py
+build_wonderists_quote.py
+restyle_wonderists_quote.py
