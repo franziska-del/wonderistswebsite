@@ -9,6 +9,7 @@ export default defineConfig({
         admin: resolve(import.meta.dirname, 'admin/index.html'),
         nextGen: resolve(import.meta.dirname, 'next-gen/index.html'),
         wildIdeas: resolve(import.meta.dirname, 'wild-ideas/index.html'),
+        wonderlab: resolve(import.meta.dirname, 'wonderlab/index.html'),
       },
     },
   },

@@ -65,6 +65,7 @@ document.querySelector('#app').innerHTML = `
       <a href="#adventures">${escapeHtml(content.navigation.adventures)}</a>
       <a href="#wondercards">${escapeHtml(content.navigation.wondercards)}</a>
       <a href="#philosophy">${escapeHtml(content.navigation.philosophy)}</a>
+      <a href="/wonderlab/">Wonderlab</a>
       <button class="nav-cta js-contact" type="button">${escapeHtml(content.navigation.contact)}</button>
     </nav>
   </header>
