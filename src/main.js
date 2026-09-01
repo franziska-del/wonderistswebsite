@@ -1,8 +1,5 @@
 import './styles.css';
-import fallbackContent from './content/home.json';
-import { loadHomePage } from './sanity/content';
-
-const content = await loadHomePage(fallbackContent);
+import content from './content/home.json';
 
 const escapeHtml = (value = '') => String(value)
   .replaceAll('&', '&amp;')
@@ -22,7 +19,7 @@ const arrowIcon = `
     <path d="M1 8h27M21 1l7 7-7 7" />
   </svg>`;
 
-const wildIdeasFallback = fallbackContent.adventures.items.find((item) => item.id === 'wild-ideas');
+const wildIdeasFallback = content.adventures.items.find((item) => item.id === 'wild-ideas');
 const adventures = [...content.adventures.items]
   .map((item) => (
     item.id === 'wild-ideas' && item.image === '/assets/next-gen.webp'

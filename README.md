@@ -1,6 +1,26 @@
 # The Wonderists
 
-A responsive, editorial website for The Wonderists — adventures and tools for entrepreneurs who want to stay curious, test their edges, and feel more alive.
+A responsive editorial website for The Wonderists, built with Vite and deployed from GitHub to Cloudflare Pages.
+
+## How publishing works
+
+`main` is the production branch. Every commit merged into `main` is deployed by Cloudflare Pages. Pull requests receive their own Cloudflare preview URL so changes can be checked before they go live.
+
+Claude Code should make changes on a branch and open a pull request. See `CLAUDE.md` for the project-specific editing guide.
+
+## Edit website content
+
+Most public copy lives in two structured files:
+
+- `src/content/home.json` — home page copy, links, adventures, contact details, and footer
+- `src/content/wild-ideas.json` — WILD IDEAS experience page copy and booking details
+
+Other page-specific copy is currently maintained in its corresponding JavaScript file:
+
+- `src/next-gen.js`
+- `src/wonderlab.js`
+
+Images and downloads live in `public/`. Preserve the existing JSON shape and validate the production build after every content change.
 
 ## Local development
 
@@ -9,7 +29,7 @@ pnpm install
 pnpm dev
 ```
 
-The site runs at `http://localhost:5173`.
+The local site runs at `http://localhost:5173`.
 
 ## Production build
 
@@ -19,35 +39,22 @@ pnpm build
 
 The production output is written to `dist/`.
 
+## Cloudflare Pages
+
+Connect the GitHub repository to a Cloudflare Pages project with:
+
+- Production branch: `main`
+- Build command: `pnpm build`
+- Build output directory: `dist`
+
+The checked-in `wrangler.jsonc` records the Pages project name and output directory. A manual deployment can be run with `pnpm deploy` after authenticating Wrangler.
+
 ## Stack
 
 - Vite
 - Semantic HTML
 - Modern CSS
 - Vanilla JavaScript
-- Sanity CMS with a simplified editor at `/admin` and advanced Studio at `/studio`
-- Locally bundled Outfit font and optimized WebP imagery
-
-See [PROJECT_PLAN.md](./PROJECT_PLAN.md) for the page structure, visual system, and content decisions.
-
-## Editing content with Sanity
-
-The public site reads published content from Sanity and falls back to
-`src/content/home.json` and `src/content/wild-ideas.json` if Sanity has not been
-connected yet or is unavailable.
-
-1. Create a Sanity project with a public `production` dataset.
-2. Copy `.env.example` to `.env.local` and add the project ID to both
-   `VITE_SANITY_PROJECT_ID` and `SANITY_STUDIO_PROJECT_ID`.
-3. Add the same environment variables in Vercel.
-4. Run `pnpm seed` once to import the current website copy.
-5. Open `/admin` on the deployed site and use the shared admin password.
-   `/studio` remains available for advanced changes with Sanity login.
-
-Publish changes in Studio to make them visible on the public site. Image fields
-support Sanity uploads while retaining the current local site image as a fallback.
-The `/admin` editor uses a signed, eight-hour password session and keeps its
-Sanity write token server-side. The advanced `/studio` editor uses Sanity login.
-
-For browser-side content reads, add the local and production site origins in
-Sanity Manage under **API → CORS origins**.
+- Repository-backed JSON content
+- Locally bundled Outfit font and optimized imagery
+- Cloudflare Pages hosting and previews

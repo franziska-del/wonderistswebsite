@@ -1,9 +1,6 @@
 import './styles.css';
 import './next-gen.css';
-import fallbackContent from './content/wild-ideas.json';
-import { loadWildIdeasPage } from './sanity/content';
-
-const content = await loadWildIdeasPage(fallbackContent);
+import content from './content/wild-ideas.json';
 
 const escapeHtml = (value = '') => String(value)
   .replaceAll('&', '&amp;')
