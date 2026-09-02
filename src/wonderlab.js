@@ -6,7 +6,6 @@ const stories = [
   {
     title: 'Lessons from the edge',
     excerpt: 'What cliffs, tides, and tiny coastal flowers teach us about timing, perspective, and letting go.',
-    date: 'Apr 28, 2026',
     read: '6 min read',
     image: '/assets/new-zealand.webp',
     alt: 'A dramatic green coastline meeting the sea',
@@ -15,7 +14,6 @@ const stories = [
   {
     title: 'Building a life, not just a plan',
     excerpt: 'How to design days that compound into meaningful years.',
-    date: 'Apr 14, 2026',
     read: '7 min read',
     image: '/assets/wondercards.webp',
     alt: 'The Wondercards deck in use',
@@ -24,7 +22,6 @@ const stories = [
   {
     title: 'On starting before you’re ready',
     excerpt: 'A love letter to brave beginnings and imperfect action.',
-    date: 'Mar 31, 2026',
     read: '5 min read',
     image: '/assets/uganda.webp',
     alt: 'A person outdoors in a vast natural landscape',
@@ -38,7 +35,7 @@ const storyCard = (story) => `
       <img src="${story.image}" alt="${story.alt}" loading="lazy" />
     </a>
     <div class="story__body">
-      <p class="story__meta">${story.date}<span>•</span>${story.read}</p>
+      <p class="story__meta">${story.read}</p>
       <h3><a href="#newsletter">${story.title}</a></h3>
       <p>${story.excerpt}</p>
       <a class="story__link" href="#newsletter">Read more ${arrow}</a>
@@ -78,7 +75,7 @@ document.querySelector('#app').innerHTML = `
     <section class="featured" aria-labelledby="featured-title">
       <figure class="featured__image"><img src="/assets/hero.webp" alt="A woman in the wild, smiling toward the sun" /></figure>
       <div class="featured__copy">
-        <p class="featured__meta">May 12, 2026 <span>•</span> 8 min read</p>
+        <p class="featured__meta">8 min read</p>
         <h2 id="featured-title">The beautiful trouble with certainty</h2>
         <div class="ember-rule"></div>
         <p>Certainty feels safe. It draws a map, builds the fence, and tells us where the edge is. But wonder lives beyond the fence.</p>
