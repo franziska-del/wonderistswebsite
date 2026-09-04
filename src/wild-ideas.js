@@ -245,9 +245,20 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   const status = form.querySelector('.form-status');
   const button = form.querySelector('button[type="submit"]');
-  status.textContent = content.booking.success;
-  button.disabled = true;
-  button.textContent = 'Enquiry received';
+  const fields = new FormData(form);
+  const message = [
+    `Name: ${fields.get('name')}`,
+    `Email: ${fields.get('email')}`,
+    `Child's age: ${fields.get('childAge')}`,
+    '',
+    'Anything else:',
+    fields.get('message') || '—',
+  ].join('\n');
+
+  const subject = 'WILD IDEAS place enquiry';
+  window.location.href = `mailto:salty@oceanlovers.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+  status.textContent = 'Your email app should open with your enquiry ready to send.';
+  button.textContent = 'Email ready to send';
 });
 
 const observer = new IntersectionObserver(
