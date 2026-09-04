@@ -1,5 +1,6 @@
 import './styles.css';
 import content from './content/home.json';
+import { submitForm } from './form-submit.js';
 
 const escapeHtml = (value = '') => String(value)
   .replaceAll('&', '&amp;')
@@ -171,6 +172,7 @@ document.querySelector('#app').innerHTML = `
     <h2 id="dialog-title">${escapeHtml(content.contact.defaultTitle)}</h2>
     <p id="dialog-description">${escapeHtml(content.contact.defaultDescription)}</p>
     <form id="interest-form">
+      <label class="form-honeypot" aria-hidden="true">Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off" /></label>
       <div class="form-fields form-fields--contact">
         <label>Your name<input type="text" name="name" autocomplete="name" required /></label>
         <label>Email address<input type="email" name="email" autocomplete="email" required /></label>
@@ -281,15 +283,13 @@ dialog.addEventListener('click', (event) => {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const status = form.querySelector('.form-status');
-  status.textContent = applicationFields.hidden ? content.contact.success : content.contact.applicationSuccess;
-  formSubmitButton.disabled = true;
-  setTimeout(() => {
-    dialog.close();
-    form.reset();
-    status.textContent = '';
-    formSubmitButton.disabled = false;
-  }, 1700);
+  const isApplication = !applicationFields.hidden;
+  submitForm({
+    form,
+    subject: isApplication ? 'New adventure application' : 'New Wonderists enquiry',
+    successMessage: isApplication ? content.contact.applicationSuccess : content.contact.success,
+    errorMessage: 'We couldn’t send your enquiry. Please try again.',
+  });
 });
 
 const observer = new IntersectionObserver(

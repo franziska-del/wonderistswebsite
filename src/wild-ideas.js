@@ -1,6 +1,7 @@
 import './styles.css';
 import './next-gen.css';
 import content from './content/wild-ideas.json';
+import { submitForm } from './form-submit.js';
 
 const escapeHtml = (value = '') => String(value)
   .replaceAll('&', '&amp;')
@@ -183,6 +184,7 @@ document.querySelector('#app').innerHTML = `
         <a class="button button--ghost-light wi-flyer-link" href="${escapeHtml(content.booking.flyerUrl)}" target="_blank" rel="noreferrer">${escapeHtml(content.booking.flyerCta)}</a>
       </div>
       <form class="ng-register__form reveal" id="wild-ideas-form">
+        <label class="form-honeypot" aria-hidden="true">Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off" /></label>
         <label>Your name<input type="text" name="name" autocomplete="name" required /></label>
         <label>Email address<input type="email" name="email" autocomplete="email" required /></label>
         <label>Your child’s age<input type="number" name="childAge" min="8" max="14" required /></label>
@@ -243,22 +245,12 @@ window.addEventListener('resize', () => {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const status = form.querySelector('.form-status');
-  const button = form.querySelector('button[type="submit"]');
-  const fields = new FormData(form);
-  const message = [
-    `Name: ${fields.get('name')}`,
-    `Email: ${fields.get('email')}`,
-    `Child's age: ${fields.get('childAge')}`,
-    '',
-    'Anything else:',
-    fields.get('message') || '—',
-  ].join('\n');
-
-  const subject = 'WILD IDEAS place enquiry';
-  window.location.href = `mailto:salty@oceanlovers.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-  status.textContent = 'Your email app should open with your enquiry ready to send.';
-  button.textContent = 'Email ready to send';
+  submitForm({
+    form,
+    subject: 'WILD IDEAS place enquiry',
+    successMessage: content.booking.success,
+    errorMessage: 'We couldn’t send your enquiry. Please try again.',
+  });
 });
 
 const observer = new IntersectionObserver(

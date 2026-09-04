@@ -1,4 +1,5 @@
 import './wonderlab.css';
+import { submitForm } from './form-submit.js';
 
 const arrow = '<svg viewBox="0 0 28 14" aria-hidden="true"><path d="M1 7h25M20 1l6 6-6 6" /></svg>';
 
@@ -93,9 +94,10 @@ document.querySelector('#app').innerHTML = `
         <h2 id="newsletter-title">Keep a little wonder close</h2>
         <p>Field notes, reflections, and resources to inspire curious minds and courageous lives.</p>
       </div>
-      <form class="newsletter__form" novalidate>
+      <form class="newsletter__form">
+        <label class="form-honeypot" aria-hidden="true">Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off" /></label>
         <label class="sr-only" for="lab-email">Your email address</label>
-        <input id="lab-email" type="email" placeholder="Your email address" autocomplete="email" required />
+        <input id="lab-email" type="email" name="email" placeholder="Your email address" autocomplete="email" required />
         <button type="submit">Join the journal</button>
         <p class="newsletter__note" role="status">No spam. Just the good stuff.</p>
       </form>
@@ -119,11 +121,12 @@ window.addEventListener('resize', () => { if (window.innerWidth > 760) setMenu(f
 const form = document.querySelector('.newsletter__form');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const input = form.querySelector('input');
-  const note = form.querySelector('.newsletter__note');
-  if (!input.checkValidity()) { input.reportValidity(); return; }
-  note.textContent = 'You’re on the list. Welcome to wonderlab.';
-  form.querySelector('button').disabled = true;
+  submitForm({
+    form,
+    subject: 'New Wonderlab newsletter subscriber',
+    successMessage: 'You’re on the list. Welcome to Wonderlab.',
+    errorMessage: 'We couldn’t add you to the journal. Please try again.',
+  });
 });
 
 const header = document.querySelector('[data-header]');

@@ -895,6 +895,15 @@ h3 {
   font-weight: 600;
 }
 
+.form-honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(2.25rem);
