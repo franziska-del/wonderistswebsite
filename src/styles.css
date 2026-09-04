@@ -530,6 +530,12 @@ h3 {
   line-height: 1.02;
 }
 
+.adventure-card__application {
+  margin: -0.75rem 0 1rem;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
 .text-link {
   display: inline-flex;
   align-items: center;
@@ -860,7 +866,8 @@ h3 {
 }
 
 .contact-dialog input,
-.contact-dialog select {
+.contact-dialog select,
+.contact-dialog textarea {
   width: 100%;
   min-height: 3.3rem;
   padding: 0.6rem 0;
@@ -871,6 +878,10 @@ h3 {
   color: var(--black);
   font-size: 1.05rem;
   text-transform: none;
+}
+
+.contact-dialog textarea {
+  resize: vertical;
 }
 
 .contact-dialog .button {

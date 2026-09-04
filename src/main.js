@@ -42,7 +42,7 @@ const adventureCard = (adventure, featured = false) => `
       <h3>${escapeHtml(adventure.title)}</h3>
       ${adventure.href
         ? `<a class="text-link text-link--light" href="${escapeHtml(adventure.href)}">${escapeHtml(adventure.cta)}${arrowIcon}</a>`
-        : `<button class="text-link text-link--light js-adventure" data-adventure="${escapeHtml(adventure.id)}">${escapeHtml(adventure.cta)}${arrowIcon}</button>`}
+        : `<p class="adventure-card__application">A curated adventure for entrepreneurs.</p><button class="text-link text-link--light js-adventure" data-adventure="${escapeHtml(adventure.id)}">Apply for this adventure${arrowIcon}</button>`}
     </div>
   </article>`;
 
@@ -171,9 +171,17 @@ document.querySelector('#app').innerHTML = `
     <h2 id="dialog-title">${escapeHtml(content.contact.defaultTitle)}</h2>
     <p id="dialog-description">${escapeHtml(content.contact.defaultDescription)}</p>
     <form id="interest-form">
-      <label>Your name<input type="text" name="name" autocomplete="name" required /></label>
-      <label>Email address<input type="email" name="email" autocomplete="email" required /></label>
-      <label>I’m interested in
+      <div class="form-fields form-fields--contact">
+        <label>Your name<input type="text" name="name" autocomplete="name" required /></label>
+        <label>Email address<input type="email" name="email" autocomplete="email" required /></label>
+      </div>
+      <div class="form-fields form-fields--application" hidden>
+        <label>Phone number<input type="tel" name="phone" autocomplete="tel" /></label>
+        <label>Business<input type="text" name="business" autocomplete="organization" /></label>
+        <label>One of your favourite rides<textarea name="favouriteRide" rows="2"></textarea></label>
+        <label>Why would you love to join this adventure?<textarea name="whyJoin" rows="3"></textarea></label>
+      </div>
+      <label class="interest-field">I’m interested in
         <select name="interest" id="interest-select">
           ${adventures.map((item) => `<option value="${escapeHtml(item.title)}">${escapeHtml(item.title)}</option>`).join('')}
           <option value="Wondercards">Wondercards</option>
@@ -193,6 +201,9 @@ const dialogTitle = document.querySelector('#dialog-title');
 const dialogDescription = document.querySelector('#dialog-description');
 const interestSelect = document.querySelector('#interest-select');
 const form = document.querySelector('#interest-form');
+const contactFields = document.querySelector('.form-fields--contact');
+const applicationFields = document.querySelector('.form-fields--application');
+const formSubmitButton = form.querySelector('button[type="submit"]');
 
 const menuLabel = menuButton.querySelector('.sr-only');
 const menuItems = [...nav.querySelectorAll('a, button')];
@@ -234,9 +245,14 @@ window.addEventListener('resize', () => {
 document.querySelectorAll('.js-adventure').forEach((button) => {
   button.addEventListener('click', () => {
     const adventure = adventures.find((item) => item.id === button.dataset.adventure);
-    dialogTitle.textContent = adventure.title;
-    dialogDescription.textContent = adventure.description;
+    dialogTitle.textContent = content.contact.applicationTitle;
+    dialogDescription.textContent = content.contact.applicationDescription;
     interestSelect.value = adventure.title;
+    contactFields.hidden = false;
+    applicationFields.hidden = false;
+    document.querySelector('.interest-field').hidden = true;
+    applicationFields.querySelectorAll('input, textarea').forEach((field) => { field.required = true; });
+    formSubmitButton.textContent = content.contact.applicationCta;
     dialog.showModal();
   });
 });
@@ -247,6 +263,10 @@ document.querySelectorAll('.js-contact').forEach((button) => {
     dialogTitle.textContent = isWondercards ? content.contact.wondercardsTitle : content.contact.defaultTitle;
     dialogDescription.textContent = isWondercards ? content.contact.wondercardsDescription : content.contact.defaultDescription;
     interestSelect.value = button.dataset.interest || 'A conversation';
+    applicationFields.hidden = true;
+    document.querySelector('.interest-field').hidden = false;
+    applicationFields.querySelectorAll('input, textarea').forEach((field) => { field.required = false; });
+    formSubmitButton.textContent = content.contact.formCta;
     closeMenu();
     dialog.showModal();
   });
@@ -262,13 +282,13 @@ dialog.addEventListener('click', (event) => {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const status = form.querySelector('.form-status');
-  status.textContent = content.contact.success;
-  form.querySelector('button[type="submit"]').disabled = true;
+  status.textContent = applicationFields.hidden ? content.contact.success : content.contact.applicationSuccess;
+  formSubmitButton.disabled = true;
   setTimeout(() => {
     dialog.close();
     form.reset();
     status.textContent = '';
-    form.querySelector('button[type="submit"]').disabled = false;
+    formSubmitButton.disabled = false;
   }, 1700);
 });
 

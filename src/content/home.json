@@ -96,7 +96,7 @@
     "unspokenTitle": "Unspoken cards",
     "unspokenBody": "A conversation card deck for the questions you do not usually ask. Made to take a chat beyond the usual small talk.",
     "unspokenCta": "Explore Unspoken cards",
-    "unspokenUrl": "https://unspoken.one/product/convos-with-randos-og-deck/",
+    "unspokenUrl": "/unspokencards/",
     "image": "/assets/wondercards.webp",
     "imageAlt": "Wondercards conversation card deck and four question cards"
   },
@@ -132,6 +132,10 @@
     "wondercardsTitle": "Bring a little wonder into ordinary life.",
     "wondercardsDescription": "Tell us where in the world your Wondercards should travel.",
     "formCta": "Count me curious",
+    "applicationTitle": "Apply for this adventure.",
+    "applicationDescription": "This is a curated adventure for entrepreneurs. Tell us a little about yourself and why this adventure belongs on your horizon.",
+    "applicationCta": "Send my application",
+    "applicationSuccess": "Application received. We’ll be in touch soon.",
     "success": "You’re on the list. We’ll meet you there."
   },
   "footer": {
