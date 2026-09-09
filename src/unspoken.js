@@ -17,10 +17,8 @@ document.querySelector('#app').innerHTML = `
           <a class="unspoken-link" href="#how-it-works">How it works <span>→</span></a>
         </div>
       </div>
-      <div class="unspoken-hero__art" aria-label="A colourful stack of Unspoken conversation cards">
-        <div class="unspoken-card-art unspoken-card-art--back">UNSPOKEN<br />CARDS</div>
-        <div class="unspoken-card-art unspoken-card-art--middle">What are you<br />still carrying?</div>
-        <div class="unspoken-card-art unspoken-card-art--front">When did you<br />last feel seen?</div>
+      <div class="unspoken-hero__art">
+        <img src="/assets/unspoken-cards-product.jpg" alt="Unspoken Cards conversation-card deck with colourful prompt cards" />
       </div>
     </section>
     <section class="unspoken-intro" id="how-it-works">
@@ -30,8 +28,8 @@ document.querySelector('#app').innerHTML = `
     </section>
     <section class="unspoken-get" id="get-the-cards">
       <h2>Ready for a real conversation?</h2>
-      <p>A deck of prompts for the things that matter, from The Wonderists.</p>
-      <a class="unspoken-button unspoken-button--light" href="mailto:hello@thewonderists.com?subject=Unspoken%20Cards">Get the cards</a>
+      <p>A deck of prompts for the things that matter, from The Wonderists. A$39 plus A$9 Australia / A$24 overseas shipping.</p>
+      <a class="unspoken-button unspoken-button--light" href="https://buy.stripe.com/9B6fZhfRofIs3qEf91awo02">Buy Unspoken Cards — A$39</a>
     </section>
   </main>
   <footer class="unspoken-footer"><a href="/">The Wonderists</a><span>© ${new Date().getFullYear()}</span></footer>

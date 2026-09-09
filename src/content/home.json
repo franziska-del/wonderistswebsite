@@ -6,6 +6,7 @@
   "navigation": {
     "adventures": "Adventures",
     "wondercards": "Wondercards",
+    "unspoken": "Unspoken Cards",
     "philosophy": "The Philosophy",
     "contact": "Say Hi"
   },
@@ -91,14 +92,22 @@
       "Each card asks a question that might make you laugh, think, reveal something unexpected or see someone differently.",
       "Think of them as the everyday version of a Wonderists adventure."
     ],
-    "shipping": "Shipping available worldwide.",
-    "cta": "Discover Wondercards",
-    "unspokenTitle": "Unspoken cards",
-    "unspokenBody": "A conversation card deck for the questions you do not usually ask. Made to take a chat beyond the usual small talk.",
-    "unspokenCta": "Explore Unspoken cards",
-    "unspokenUrl": "/unspokencards/",
+    "shipping": "A$39 per deck. Shipping: A$9 Australia / A$24 overseas.",
+    "cta": "Buy Wondercards — A$39",
+    "checkoutUrl": "https://buy.stripe.com/bJe4gzeNk2VGgdqbWPawo03",
     "image": "/assets/wondercards.webp",
     "imageAlt": "Wondercards conversation card deck and four question cards"
+  },
+  "unspoken": {
+    "title": "Say the\nthing.",
+    "body": [
+      "Unspoken Cards are prompts for the conversations that rarely happen by accident.",
+      "Pull a card with a friend, a partner, your team or someone you’ve only just met. There are no right answers—just a little more room for what matters."
+    ],
+    "cta": "Explore Unspoken Cards",
+    "url": "/unspokencards/",
+    "image": "/assets/unspoken-cards-product.jpg",
+    "imageAlt": "Unspoken Cards conversation-card deck with colourful prompt cards"
   },
   "philosophy": {
     "title": "Stay curious.\nStay courageous.\nStay connected.",

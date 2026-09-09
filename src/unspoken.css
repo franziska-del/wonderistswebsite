@@ -12,12 +12,8 @@
 .unspoken-button { display: inline-block; padding: 1rem 1.45rem; background: var(--coral); color: var(--ink); font-weight: 700; }
 .unspoken-link { margin-left: 1.5rem; border-bottom: 2px solid var(--blush); padding-bottom: .45rem; font-weight: 600; }
 .unspoken-link span { padding-left: .75rem; font-size: 1.35em; }
-.unspoken-hero__art { position: relative; min-height: 42rem; background: var(--violet); overflow: hidden; }
-.unspoken-hero__art::before { content: ''; position: absolute; width: 68vw; height: 68vw; right: -23vw; top: -12vw; border-radius: 50%; background: var(--blush); opacity: .98; }
-.unspoken-card-art { position: absolute; width: min(29vw, 28rem); aspect-ratio: .72; display: flex; align-items: flex-end; padding: clamp(1.5rem, 3vw, 3rem); box-shadow: 1.2rem 1.4rem 0 rgba(18, 26, 52, .17); font-size: clamp(1.5rem, 2.5vw, 2.8rem); font-weight: 500; line-height: 1.04; letter-spacing: -.05em; }
-.unspoken-card-art--back { right: 25%; top: 15%; background: var(--coral); color: var(--ink); transform: rotate(-18deg); font-size: clamp(2.5rem, 5vw, 5.5rem); }
-.unspoken-card-art--middle { right: 10%; top: 23%; background: var(--ink); color: var(--blush); transform: rotate(12deg); }
-.unspoken-card-art--front { right: 27%; top: 45%; background: var(--lilac); color: var(--violet); transform: rotate(-5deg); }
+.unspoken-hero__art { min-height: 42rem; background: var(--violet); overflow: hidden; }
+.unspoken-hero__art img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .unspoken-intro { display: grid; grid-template-columns: .65fr 1.15fr .7fr; gap: 3rem; padding: clamp(6rem, 11vw, 11rem) clamp(1.25rem, 7vw, 9rem); background: var(--lilac); }
 .unspoken-intro h2,.unspoken-get h2 { margin: 0; font-size: clamp(4rem, 7.2vw, 8rem); }
 .unspoken-intro div { max-width: 29rem; align-self: end; font-size: clamp(1.1rem, 1.45vw, 1.4rem); }
@@ -26,5 +22,5 @@
 .unspoken-get p { max-width: 30rem; margin: 1.7rem auto 2.2rem; font-size: 1.2rem; }
 .unspoken-button--light { background: var(--ink); color: var(--lilac); }
 .unspoken-footer { display: flex; justify-content: space-between; padding: 1.6rem clamp(1.25rem, 4vw, 5rem); background: var(--ink); color: var(--lilac); font-size: .82rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-@media (max-width: 800px) { .unspoken-hero { grid-template-columns: 1fr; } .unspoken-hero__copy { min-height: 39rem; padding-top: 8rem; } .unspoken-hero__art { min-height: 34rem; } .unspoken-card-art { width: 52vw; } .unspoken-card-art--back { right: 29%; } .unspoken-card-art--middle { right: 8%; } .unspoken-card-art--front { right: 30%; } .unspoken-intro { grid-template-columns: 1fr; gap: 2rem; } .unspoken-section-name { margin: 0; } }
-@media (max-width: 520px) { .unspoken-header { font-size: .68rem; } .unspoken-hero h1 { font-size: clamp(4.8rem, 23vw, 7rem); } .unspoken-link { margin: 1.5rem 0 0; display: block; } .unspoken-hero__art { min-height: 28rem; } .unspoken-card-art { width: 58vw; padding: 1.4rem; font-size: 1.55rem; } .unspoken-card-art--back { font-size: 3rem; } .unspoken-footer { font-size: .65rem; } }
+@media (max-width: 800px) { .unspoken-hero { grid-template-columns: 1fr; } .unspoken-hero__copy { min-height: 39rem; padding-top: 8rem; } .unspoken-hero__art { min-height: 34rem; } .unspoken-intro { grid-template-columns: 1fr; gap: 2rem; } .unspoken-section-name { margin: 0; } }
+@media (max-width: 520px) { .unspoken-header { font-size: .68rem; } .unspoken-hero h1 { font-size: clamp(4.8rem, 23vw, 7rem); } .unspoken-link { margin: 1.5rem 0 0; display: block; } .unspoken-hero__art { min-height: 28rem; } .unspoken-footer { font-size: .65rem; } }

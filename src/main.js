@@ -62,6 +62,7 @@ document.querySelector('#app').innerHTML = `
     <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
       <a href="#adventures">${escapeHtml(content.navigation.adventures)}</a>
       <a href="#wondercards">${escapeHtml(content.navigation.wondercards)}</a>
+      <a href="#unspoken">${escapeHtml(content.navigation.unspoken)}</a>
       <a href="#philosophy">${escapeHtml(content.navigation.philosophy)}</a>
       <a href="/wonderlab/">Wonderlab</a>
       <button class="nav-cta js-contact" type="button">${escapeHtml(content.navigation.contact)}</button>
@@ -118,17 +119,23 @@ document.querySelector('#app').innerHTML = `
         ${paragraphs(content.wondercards.body)}
         <p class="shipping">${escapeHtml(content.wondercards.shipping)}</p>
         <div class="button-row">
-          <button class="button button--sand js-contact" type="button" data-interest="Wondercards">${escapeHtml(content.wondercards.cta)}</button>
+          <a class="button button--sand" href="${escapeHtml(content.wondercards.checkoutUrl)}">${escapeHtml(content.wondercards.cta)}</a>
         </div>
-        <aside class="unspoken-card">
-          <p class="unspoken-card__eyebrow">Also from The Wonderists</p>
-          <h3>${escapeHtml(content.wondercards.unspokenTitle)}</h3>
-          <p>${escapeHtml(content.wondercards.unspokenBody)}</p>
-          <a class="text-link text-link--light" href="${escapeHtml(content.wondercards.unspokenUrl)}" target="_blank" rel="noreferrer">${escapeHtml(content.wondercards.unspokenCta)}${arrowIcon}</a>
-        </aside>
       </div>
       <div class="wondercards__media reveal">
         <img src="${escapeHtml(content.wondercards.image)}" loading="lazy" alt="${escapeHtml(content.wondercards.imageAlt)}" />
+      </div>
+    </section>
+
+    <section class="unspoken" id="unspoken" aria-labelledby="unspoken-title">
+      <div class="unspoken__media reveal">
+        <img src="${escapeHtml(content.unspoken.image)}" loading="lazy" alt="${escapeHtml(content.unspoken.imageAlt)}" />
+      </div>
+      <div class="unspoken__copy reveal">
+        <p class="unspoken__label">Unspoken Cards</p>
+        <h2 id="unspoken-title">${withBreaks(content.unspoken.title)}</h2>
+        ${paragraphs(content.unspoken.body)}
+        <a class="button unspoken__button" href="${escapeHtml(content.unspoken.url)}">${escapeHtml(content.unspoken.cta)}</a>
       </div>
     </section>
 

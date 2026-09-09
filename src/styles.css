@@ -634,32 +634,6 @@ h3 {
   font-weight: 600;
 }
 
-.unspoken-card {
-  max-width: 38rem;
-  margin-top: clamp(3rem, 5vw, 5rem);
-  padding-top: 1.8rem;
-  border-top: 1px solid color-mix(in srgb, var(--sand) 45%, transparent);
-}
-
-.unspoken-card__eyebrow {
-  margin-bottom: 0.75rem;
-  color: var(--ember);
-  font-size: 0.78rem !important;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.unspoken-card h3 {
-  margin-bottom: 0.9rem;
-  font-size: clamp(1.8rem, 2.8vw, 3.2rem);
-  line-height: 1;
-}
-
-.unspoken-card p {
-  margin-bottom: 1.3rem;
-}
-
 .wondercards__media {
   min-height: 54rem;
   overflow: hidden;
@@ -670,6 +644,62 @@ h3 {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.unspoken {
+  display: grid;
+  grid-template-columns: 54% 46%;
+  min-height: 53rem;
+  background: #121a34;
+  color: #f2ecff;
+}
+
+.unspoken__media {
+  min-height: 53rem;
+  overflow: hidden;
+}
+
+.unspoken__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.unspoken__copy {
+  align-self: center;
+  max-width: 40rem;
+  padding: var(--section-space) var(--page-gutter);
+}
+
+.unspoken__label {
+  margin-bottom: 1.25rem;
+  color: #f6b7c8;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.unspoken h2 {
+  margin-bottom: 2.2rem;
+  color: #ff5a53;
+  font-size: clamp(4.3rem, 7vw, 8.4rem);
+}
+
+.unspoken__copy p:not(.unspoken__label) {
+  max-width: 32rem;
+  font-size: clamp(1.05rem, 1.35vw, 1.3rem);
+}
+
+.unspoken__button {
+  margin-top: 1.2rem;
+  background: #ff5a53;
+  color: #121a34;
+}
+
+.unspoken__button:hover {
+  background: #f6b7c8;
 }
 
 .philosophy {
@@ -962,6 +992,20 @@ h3 {
   .wondercards__copy {
     padding-top: 5rem;
   }
+
+  .unspoken {
+    grid-template-columns: 1fr;
+  }
+
+  .unspoken__media {
+    min-height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .unspoken__copy {
+    max-width: none;
+    padding-top: 5rem;
+  }
 }
 
 @media (max-width: 820px) {
@@ -1213,6 +1257,10 @@ h3 {
 
   .wondercards__media img {
     object-position: 56% center;
+  }
+
+  .unspoken__media {
+    aspect-ratio: 4 / 3;
   }
 
   .site-footer {
