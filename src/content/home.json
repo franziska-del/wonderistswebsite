@@ -73,6 +73,15 @@
         "href": "",
         "image": "/assets/mentawai.webp",
         "description": "Leave the boardroom behind and head for one of the world’s most celebrated surf regions on a luxury boat. Days in the water. Evenings with an intimate group of entrepreneurs. Time to think, talk and remember what it feels like to be completely absorbed in something."
+      },
+      {
+        "id": "saudi-arabia",
+        "number": "05",
+        "title": "Explore Saudi Arabia by motorbike",
+        "cta": "Explore Saudi Arabia",
+        "href": "",
+        "image": "/assets/uganda.webp",
+        "description": "A motorcycle adventure across Saudi Arabia’s shifting dunes, ancient rock canyons and open desert highways. Ride through landscapes few outsiders ever see, share campfire nights under a wide desert sky and swap boardroom thinking for the kind of clarity you only find on the road."
       }
     ]
   },
