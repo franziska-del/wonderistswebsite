@@ -80,8 +80,21 @@
         "title": "Explore Saudi Arabia by motorbike",
         "cta": "Explore Saudi Arabia",
         "href": "",
+        "waitlist": true,
+        "date": "January 2028",
         "image": "/assets/uganda.webp",
         "description": "A motorcycle adventure across Saudi Arabia’s shifting dunes, ancient rock canyons and open desert highways. Ride through landscapes few outsiders ever see, share campfire nights under a wide desert sky and swap boardroom thinking for the kind of clarity you only find on the road."
+      },
+      {
+        "id": "argentina",
+        "number": "06",
+        "title": "Explore Argentina by motorbike",
+        "cta": "Explore Argentina",
+        "href": "",
+        "waitlist": true,
+        "date": "November 2027",
+        "image": "/assets/new-zealand.webp",
+        "description": "A motorcycle adventure through Argentina, from the vineyards of Mendoza to the wild roads of Patagonia. Ride alongside a small group of entrepreneurs, trade the boardroom for the open road and let the landscape do some of the thinking for you."
       }
     ]
   },
@@ -154,6 +167,10 @@
     "applicationDescription": "This is a curated adventure for entrepreneurs. Tell us a little about yourself and why this adventure belongs on your horizon.",
     "applicationCta": "Send my application",
     "applicationSuccess": "Application received. We’ll be in touch soon.",
+    "waitlistTitle": "Join the waitlist.",
+    "waitlistDescription": "This adventure is still taking shape. Pop your details in and you’ll be the first to hear when dates and details are confirmed.",
+    "waitlistCta": "Join the waitlist",
+    "waitlistSuccess": "You’re on the waitlist. We’ll let you know as soon as details are confirmed.",
     "success": "You’re on the list. We’ll meet you there."
   },
   "footer": {
