@@ -5,6 +5,15 @@ const arrow = '<svg viewBox="0 0 28 14" aria-hidden="true"><path d="M1 7h25M20 1
 
 const stories = [
   {
+    title: 'Don’t Be a Pussy (Unless That’s the Brave Part)',
+    excerpt: 'Courage isn’t always forward motion. Sometimes it’s telling avoidance apart from self-abandonment.',
+    read: '4 min read',
+    image: '/assets/header-coast.png',
+    alt: 'Sunset light over rugged ocean cliffs and a sandy shoreline',
+    shape: 'landscape',
+    href: '/wonderlab/dont-be-a-pussy/',
+  },
+  {
     title: 'Lessons from the edge',
     excerpt: 'What cliffs, tides, and tiny coastal flowers teach us about timing, perspective, and letting go.',
     read: '6 min read',
@@ -27,15 +36,6 @@ const stories = [
     image: '/assets/uganda.webp',
     alt: 'A person outdoors in a vast natural landscape',
     shape: 'portrait',
-  },
-  {
-    title: 'Don’t Be a Pussy (Unless That’s the Brave Part)',
-    excerpt: 'Courage isn’t always forward motion. Sometimes it’s telling avoidance apart from self-abandonment.',
-    read: '4 min read',
-    image: '/assets/header-coast.png',
-    alt: 'Sunset light over rugged ocean cliffs and a sandy shoreline',
-    shape: 'landscape',
-    href: '/wonderlab/dont-be-a-pussy/',
   },
 ];
 
