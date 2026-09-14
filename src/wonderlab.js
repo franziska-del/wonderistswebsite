@@ -28,20 +28,32 @@ const stories = [
     alt: 'A person outdoors in a vast natural landscape',
     shape: 'portrait',
   },
+  {
+    title: 'Don’t Be a Pussy (Unless That’s the Brave Part)',
+    excerpt: 'Courage isn’t always forward motion. Sometimes it’s telling avoidance apart from self-abandonment.',
+    read: '4 min read',
+    image: '/assets/header-coast.png',
+    alt: 'Sunset light over rugged ocean cliffs and a sandy shoreline',
+    shape: 'landscape',
+    href: '/wonderlab/dont-be-a-pussy/',
+  },
 ];
 
-const storyCard = (story) => `
+const storyCard = (story) => {
+  const href = story.href ?? '#newsletter';
+  return `
   <article class="story story--${story.shape}">
-    <a class="story__image" href="#newsletter" aria-label="Read ${story.title}">
+    <a class="story__image" href="${href}" aria-label="Read ${story.title}">
       <img src="${story.image}" alt="${story.alt}" loading="lazy" />
     </a>
     <div class="story__body">
       <p class="story__meta">${story.read}</p>
-      <h3><a href="#newsletter">${story.title}</a></h3>
+      <h3><a href="${href}">${story.title}</a></h3>
       <p>${story.excerpt}</p>
-      <a class="story__link" href="#newsletter">Read more ${arrow}</a>
+      <a class="story__link" href="${href}">Read more ${arrow}</a>
     </div>
   </article>`;
+};
 
 document.querySelector('#app').innerHTML = `
   <header class="lab-header" data-header>
