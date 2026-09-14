@@ -95,6 +95,15 @@
         "date": "November 2027",
         "image": "/assets/new-zealand.webp",
         "description": "A motorcycle adventure through Argentina, from the vineyards of Mendoza to the wild roads of Patagonia. Ride alongside a small group of entrepreneurs, trade the boardroom for the open road and let the landscape do some of the thinking for you."
+      },
+      {
+        "id": "sumba",
+        "number": "07",
+        "title": "Surf camp in Sumba for entrepreneurs and their kids",
+        "cta": "Explore Sumba",
+        "href": "",
+        "image": "/assets/header-coast.png",
+        "description": "A parent and child surf adventure on one of Indonesia’s least crowded coastlines. Learn to read the waves together, fall off more times than you catch a ride, and spend a week away from screens and schedules with other curious, adventurous families. The kind of trip your kids will still be talking about years from now, and so will you."
       }
     ]
   },
