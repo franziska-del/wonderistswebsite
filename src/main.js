@@ -41,9 +41,12 @@ const adventureCard = (adventure, featured = false) => `
     <div class="adventure-card__content">
       <span class="adventure-number">${escapeHtml(adventure.number)}</span>
       <h3>${escapeHtml(adventure.title)}</h3>
+      ${adventure.date ? `<p class="adventure-card__date">${escapeHtml(adventure.date)}</p>` : ''}
       ${adventure.href
         ? `<a class="text-link text-link--light" href="${escapeHtml(adventure.href)}">${escapeHtml(adventure.cta)}${arrowIcon}</a>`
-        : `<p class="adventure-card__application">A curated adventure for entrepreneurs.</p><button class="text-link text-link--light js-adventure" data-adventure="${escapeHtml(adventure.id)}">Apply for this adventure${arrowIcon}</button>`}
+        : adventure.waitlist
+          ? `<p class="adventure-card__application">A curated adventure for entrepreneurs.</p><button class="text-link text-link--light js-adventure" data-adventure="${escapeHtml(adventure.id)}">Join the waitlist${arrowIcon}</button>`
+          : `<p class="adventure-card__application">A curated adventure for entrepreneurs.</p><button class="text-link text-link--light js-adventure" data-adventure="${escapeHtml(adventure.id)}">Apply for this adventure${arrowIcon}</button>`}
     </div>
   </article>`;
 
@@ -251,17 +254,21 @@ window.addEventListener('resize', () => {
   }
 });
 
+let interestMode = 'contact';
+
 document.querySelectorAll('.js-adventure').forEach((button) => {
   button.addEventListener('click', () => {
     const adventure = adventures.find((item) => item.id === button.dataset.adventure);
-    dialogTitle.textContent = content.contact.applicationTitle;
-    dialogDescription.textContent = content.contact.applicationDescription;
+    const isWaitlist = Boolean(adventure.waitlist);
+    interestMode = isWaitlist ? 'waitlist' : 'application';
+    dialogTitle.textContent = isWaitlist ? content.contact.waitlistTitle : content.contact.applicationTitle;
+    dialogDescription.textContent = isWaitlist ? content.contact.waitlistDescription : content.contact.applicationDescription;
     interestSelect.value = adventure.title;
     contactFields.hidden = false;
-    applicationFields.hidden = false;
+    applicationFields.hidden = isWaitlist;
     document.querySelector('.interest-field').hidden = true;
-    applicationFields.querySelectorAll('input, textarea').forEach((field) => { field.required = true; });
-    formSubmitButton.textContent = content.contact.applicationCta;
+    applicationFields.querySelectorAll('input, textarea').forEach((field) => { field.required = !isWaitlist; });
+    formSubmitButton.textContent = isWaitlist ? content.contact.waitlistCta : content.contact.applicationCta;
     dialog.showModal();
   });
 });
@@ -269,6 +276,7 @@ document.querySelectorAll('.js-adventure').forEach((button) => {
 document.querySelectorAll('.js-contact').forEach((button) => {
   button.addEventListener('click', () => {
     const isWondercards = button.dataset.interest === 'Wondercards';
+    interestMode = 'contact';
     dialogTitle.textContent = isWondercards ? content.contact.wondercardsTitle : content.contact.defaultTitle;
     dialogDescription.textContent = isWondercards ? content.contact.wondercardsDescription : content.contact.defaultDescription;
     interestSelect.value = button.dataset.interest || 'A conversation';
@@ -288,13 +296,24 @@ dialog.addEventListener('click', (event) => {
   if (outside) dialog.close();
 });
 
+const submitSubjects = {
+  application: 'New adventure application',
+  waitlist: 'New adventure waitlist signup',
+  contact: 'New Wonderists enquiry',
+};
+
+const submitSuccessMessages = {
+  application: content.contact.applicationSuccess,
+  waitlist: content.contact.waitlistSuccess,
+  contact: content.contact.success,
+};
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const isApplication = !applicationFields.hidden;
   submitForm({
     form,
-    subject: isApplication ? 'New adventure application' : 'New Wonderists enquiry',
-    successMessage: isApplication ? content.contact.applicationSuccess : content.contact.success,
+    subject: submitSubjects[interestMode],
+    successMessage: submitSuccessMessages[interestMode],
     errorMessage: 'We couldn’t send your enquiry. Please try again.',
   });
 });
