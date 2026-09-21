@@ -86,7 +86,7 @@ document.querySelector('#app').innerHTML = `
     </section>
 
     <section class="featured" aria-labelledby="featured-title">
-      <figure class="featured__image"><img src="/assets/hero.webp" alt="A woman in the wild, smiling toward the sun" /></figure>
+      <figure class="featured__image"><img src="/assets/garden-wonder.webp" alt="Illustration of a girl crouching to look at a snail on a leaf while a boy gazes up at a full moon over a hillside garden at dusk" /></figure>
       <div class="featured__copy">
         <p class="featured__meta">3 min read</p>
         <h2 id="featured-title">Can I Poo in the Garden?</h2>
