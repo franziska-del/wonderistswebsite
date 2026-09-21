@@ -86,13 +86,13 @@ document.querySelector('#app').innerHTML = `
     </section>
 
     <section class="featured" aria-labelledby="featured-title">
-      <figure class="featured__image"><img src="/assets/hero.webp" alt="A woman in the wild, smiling toward the sun" /></figure>
+      <figure class="featured__image"><img src="/assets/garden-wonder.webp" alt="Illustration of a girl crouching to look at a snail on a leaf while a boy gazes up at a full moon over a hillside garden at dusk" /></figure>
       <div class="featured__copy">
-        <p class="featured__meta">8 min read</p>
-        <h2 id="featured-title">The beautiful trouble with certainty</h2>
+        <p class="featured__meta">3 min read</p>
+        <h2 id="featured-title">Can I Poo in the Garden?</h2>
         <div class="ember-rule"></div>
-        <p>Certainty feels safe. It draws a map, builds the fence, and tells us where the edge is. But wonder lives beyond the fence.</p>
-        <a class="read-link" href="#newsletter">Read the story ${arrow}</a>
+        <p>On growing up without outgrowing wonder. Somewhere along the way, many of us begin valuing answers more than questions. What happens if we don’t?</p>
+        <a class="read-link" href="/wonderlab/can-i-poo-in-the-garden/">Read the story ${arrow}</a>
       </div>
     </section>
 

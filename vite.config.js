@@ -10,6 +10,7 @@ export default defineConfig({
         wildIdeas: resolve(import.meta.dirname, 'wild-ideas/index.html'),
         wonderlab: resolve(import.meta.dirname, 'wonderlab/index.html'),
         dontBeAPussy: resolve(import.meta.dirname, 'wonderlab/dont-be-a-pussy/index.html'),
+        canIPooInTheGarden: resolve(import.meta.dirname, 'wonderlab/can-i-poo-in-the-garden/index.html'),
         unspokenCards: resolve(import.meta.dirname, 'unspokencards/index.html'),
       },
     },
