@@ -36,16 +36,6 @@ const photos = [
   ['yellow-card-sunflowers.jpg', 'A yellow Wondercard held up among sunflowers'],
 ];
 
-const questions = [
-  { q: 'Are we really as free as we think we are?', bg: 'var(--card-pink)' },
-  { q: 'When have you disguised giving up as being realistic?', bg: 'var(--card-orange)' },
-  { q: 'Are you more yourself when nobody is watching?', bg: 'var(--card-blue)' },
-  { q: 'If the walls of your home could remember everything they’ve seen, what would they remember most?', bg: 'var(--card-green)' },
-  { q: 'Do you think bad things happen for a reason? Why or why not?', bg: 'var(--card-yellow)' },
-  { q: 'Why are some questions ‘rude’ when everyone secretly wants to know the answer?', bg: 'var(--card-pink)' },
-  { q: 'What might your 90-year-old self regret that you still have time to change?', bg: 'var(--card-orange)' },
-];
-
 // Featured quote. Set "showQuote" to false in src/content/wondercards.json to remove it.
 const quote = `
     <section class="wc-quote" aria-label="What people say">
@@ -66,7 +56,6 @@ document.querySelector('#app').innerHTML = `
     </button>
     <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
       <a href="#how">How it works</a>
-      <a href="#try">Try a card</a>
       <a href="#inside">What’s inside</a>
       <a href="/#adventures">Adventures</a>
       <a href="/wonderlab/">Wonderlab</a>
@@ -76,7 +65,7 @@ document.querySelector('#app').innerHTML = `
   <main id="main">
     <section class="wc-hero wc-wrap" aria-labelledby="wc-title">
       <div class="wc-hero__copy">
-        <img class="wc-hero__logo" src="${img}/wondercards-logo-ocean.png" alt="Wondercards" width="697" height="293" />
+        <p class="wc-hero__name">Wondercards</p>
         <h1 id="wc-title" class="wc-script">The future belongs to the curious</h1>
         <p class="wc-hero__lead">Small box. Big questions. Occasionally questionable answers.</p>
         <p class="wc-body">For people who are tired of small talk and hungry for soul talk. Draw a card at dinner, on a road trip or halfway through a glass of wine, and watch an ordinary evening wander somewhere nobody planned. Small talk is a polite way of staying strangers. These cards are the way out.</p>
@@ -113,15 +102,6 @@ document.querySelector('#app').innerHTML = `
           <h3>${title}</h3>
           <p>${body}</p>
         </div>`).join('')}
-      </div>
-    </section>
-
-    <section class="wc-try" id="try" aria-label="Try a card">
-      <div class="wc-wrap">
-        <div class="wc-card" id="question-card" role="button" tabindex="0" aria-label="Tap for another question">
-          <p id="card-question" aria-live="polite">${questions[0].q}</p>
-          <span>THEWONDERISTS.COM</span>
-        </div>
       </div>
     </section>
 
@@ -182,30 +162,6 @@ ${settings.showQuote ? quote : ''}
     <p class="wc-footer__script">Fully alive, while alive</p>
   </footer>
 `;
-
-// Try a card: tap, click, Enter or Space draws a different random question.
-const card = document.querySelector('#question-card');
-const question = document.querySelector('#card-question');
-let current = 0;
-
-const showQuestion = () => {
-  question.textContent = questions[current].q;
-  card.style.background = questions[current].bg;
-};
-
-const drawQuestion = () => {
-  current = (current + 1 + Math.floor(Math.random() * (questions.length - 1))) % questions.length;
-  showQuestion();
-};
-
-card.addEventListener('click', drawQuestion);
-card.addEventListener('keydown', (event) => {
-  if (event.key === 'Enter' || event.key === ' ') {
-    event.preventDefault();
-    drawQuestion();
-  }
-});
-showQuestion();
 
 // Header: mobile menu and scrolled state, matching the home page.
 const header = document.querySelector('[data-header]');
