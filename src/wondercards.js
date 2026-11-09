@@ -23,7 +23,7 @@ const steps = [
 ];
 
 const uses = [
-  ['Dinner with friends', 'For the night that would otherwise end in a debate about property prices.'],
+  ['Friends', 'For the night that would otherwise end in a debate about property prices.'],
   ['Families', 'Breakfast questions that get more than “fine” out of a twelve-year-old. Possibly. No promises.'],
   ['Couples', 'For year one and year twenty. You haven’t run out of things to learn about each other, you’ve just stopped asking.'],
   ['Teams', 'An offsite opener that beats two truths and a lie by a considerable distance.'],
