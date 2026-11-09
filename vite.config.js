@@ -11,6 +11,7 @@ export default defineConfig({
         wonderlab: resolve(import.meta.dirname, 'wonderlab/index.html'),
         dontBeAPussy: resolve(import.meta.dirname, 'wonderlab/dont-be-a-pussy/index.html'),
         unspokenCards: resolve(import.meta.dirname, 'unspokencards/index.html'),
+        wondercards: resolve(import.meta.dirname, 'wondercards/index.html'),
       },
     },
   },
