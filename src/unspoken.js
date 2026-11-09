@@ -4,7 +4,7 @@ import './unspoken.css';
 document.querySelector('#app').innerHTML = `
   <header class="unspoken-header">
     <a class="unspoken-wordmark" href="/">THE WONDERISTS</a>
-    <a class="unspoken-back" href="/#wondercards">Back to Wondercards</a>
+    <a class="unspoken-back" href="/wondercards/">Back to Wondercards</a>
   </header>
   <main id="main">
     <section class="unspoken-hero" aria-labelledby="unspoken-title">

@@ -64,7 +64,7 @@ document.querySelector('#app').innerHTML = `
     </button>
     <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
       <a href="#adventures">${escapeHtml(content.navigation.adventures)}</a>
-      <a href="#wondercards">${escapeHtml(content.navigation.wondercards)}</a>
+      <a href="/wondercards/">${escapeHtml(content.navigation.wondercards)}</a>
       <a href="#unspoken">${escapeHtml(content.navigation.unspoken)}</a>
       <a href="#philosophy">${escapeHtml(content.navigation.philosophy)}</a>
       <a href="/wonderlab/">Wonderlab</a>
@@ -79,7 +79,7 @@ document.querySelector('#app').innerHTML = `
         <div class="hero__body reveal">${paragraphs(content.hero.body)}</div>
         <div class="button-row reveal">
           <a class="button button--primary" href="#adventures">${escapeHtml(content.hero.primaryCta)}</a>
-          <a class="button button--outline" href="#wondercards">${escapeHtml(content.hero.secondaryCta)}</a>
+          <a class="button button--outline" href="/wondercards/">${escapeHtml(content.hero.secondaryCta)}</a>
         </div>
       </div>
       <figure class="hero__media">
@@ -162,7 +162,7 @@ document.querySelector('#app').innerHTML = `
       </div>
       <div class="closing__actions reveal">
         <a class="button button--sand" href="#adventures">${escapeHtml(content.closing.primaryCta)}</a>
-        <a class="button button--ghost-light" href="#wondercards">${escapeHtml(content.closing.secondaryCta)}</a>
+        <a class="button button--ghost-light" href="/wondercards/">${escapeHtml(content.closing.secondaryCta)}</a>
       </div>
     </section>
   </main>

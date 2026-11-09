@@ -19,7 +19,7 @@ document.querySelector('#app').innerHTML = `
     <button class="lab-menu" type="button" aria-expanded="false" aria-controls="lab-nav"><span></span><span></span><span class="sr-only">Open menu</span></button>
     <nav class="lab-nav" id="lab-nav" aria-label="Primary navigation">
       <a href="/#adventures">Adventures</a>
-      <a href="/#wondercards">Wondercards</a>
+      <a href="/wondercards/">Wondercards</a>
       <a href="/#philosophy">Philosophy</a>
       <a class="is-current" href="/wonderlab/">Wonderlab</a>
       <a class="lab-nav__cta" href="/#say-hi">Say hello</a>
