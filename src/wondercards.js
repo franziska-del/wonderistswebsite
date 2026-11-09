@@ -70,7 +70,7 @@ document.querySelector('#app').innerHTML = `
         <p class="wc-hero__lead">Small box. Big questions. Occasionally questionable answers.</p>
         <p class="wc-body">For people who are tired of small talk and hungry for soul talk. Draw a card at dinner, on a road trip or halfway through a glass of wine, and watch an ordinary evening wander somewhere nobody planned. Small talk is a polite way of staying strangers. These cards are the way out.</p>
         <div class="wc-actions">${orderButton()}</div>
-        <p class="wc-note">56 round cards · Plus shipping: A$9 Australia / A$24 overseas</p>
+        <p class="wc-note">56 round cards · Free shipping</p>
       </div>
       <div class="wc-hero__media">
         <div class="wc-hero__frame">
@@ -137,7 +137,7 @@ document.querySelector('#app').innerHTML = `
               </div>`).join('')}
             </div>
           </div>
-          <div class="wc-actions">${orderButton()}<span class="wc-note">Plus shipping: A$9 Australia / A$24 overseas</span></div>
+          <div class="wc-actions">${orderButton()}<span class="wc-note">Free shipping</span></div>
         </div>
         <div class="wc-inside__media">
           <img src="${img}/box-on-table.jpg" alt="The blue Wondercards box on a glass table" loading="lazy" width="1400" height="1050" />
@@ -152,7 +152,7 @@ ${settings.showQuote ? quote : ''}
       <h2 id="wc-close-title" class="wc-script wc-script--xl">Let’s ruin small talk!</h2>
       <p>Keep a deck on the dinner table, in the glovebox or in your bag. The evenings you remember rarely start with “so, how was work?”</p>
       ${orderButton()}
-      <p class="wc-note">Plus shipping: A$9 Australia / A$24 overseas</p>
+      <p class="wc-note">Free shipping</p>
     </section>
   </main>
 
