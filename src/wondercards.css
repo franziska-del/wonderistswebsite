@@ -1,0 +1,620 @@
+@font-face {
+  font-family: 'Amertha';
+  src: url('/fonts/amertha-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  ascent-override: 96%;
+  descent-override: 34%;
+  line-gap-override: 0%;
+}
+
+.wc-page {
+  --card-yellow: #f6ee64;
+  --card-blue: #94e0ed;
+  --card-pink: #f7a9e1;
+  --card-green: #a8dd76;
+  --card-orange: #ffc05a;
+  --wc-line: rgba(17, 17, 17, 0.12);
+  --wc-muted: #3d3d3d;
+  --wc-space: clamp(4rem, 8vw, 7rem);
+  overflow-x: hidden;
+}
+
+.wc-page main h1,
+.wc-page main h2,
+.wc-page main h3 {
+  margin: 0;
+  letter-spacing: normal;
+}
+
+.wc-page main p {
+  margin: 0;
+}
+
+/* Layout */
+.wc-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--wc-space) clamp(1.25rem, 4vw, 2rem);
+}
+
+.wc-split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(2.5rem, 6vw, 4rem);
+  align-items: flex-start;
+}
+
+.wc-split--centre {
+  align-items: center;
+}
+
+.wc-split > * {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+.wc-stack {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.wc-centre {
+  text-align: center;
+}
+
+/* Type */
+.wc-script {
+  font-family: 'Amertha', cursive;
+  font-weight: 400;
+  font-size: clamp(2.75rem, 1.6rem + 4vw, 4rem);
+  line-height: 1.3;
+  color: var(--ocean);
+}
+
+.wc-script--line {
+  font-size: clamp(2.25rem, 1.5rem + 2.6vw, 3rem);
+}
+
+.wc-script--xl {
+  font-size: clamp(3.25rem, 1.8rem + 5.4vw, 5rem);
+}
+
+.wc-h2 {
+  font-size: clamp(2rem, 1.4rem + 2.2vw, 2.875rem);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.wc-eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ocean);
+}
+
+.wc-body {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--wc-muted);
+}
+
+.wc-note {
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #555555;
+}
+
+/* Buy button */
+.wc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.25rem;
+  align-items: center;
+}
+
+.wc-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  background: var(--ember);
+  color: var(--sand);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  text-align: center;
+  transition: background-color 150ms ease;
+}
+
+.wc-button:hover {
+  background: #c94a20;
+}
+
+.wc-button:focus-visible {
+  outline: 3px solid var(--reef);
+  outline-offset: 3px;
+}
+
+/* Hero (top padding clears the fixed site header) */
+.wc-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(3rem, 6vw, 4rem);
+  align-items: center;
+  padding-top: calc(6.6rem + clamp(1.5rem, 3vw, 3rem));
+}
+
+.wc-hero__copy {
+  flex: 1 1 480px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.wc-hero__copy .wc-actions {
+  padding-top: 0.5rem;
+}
+
+/* Room for the Amertha swashes, which overhang the glyph box */
+.wc-hero h1 {
+  padding-left: 0.12em;
+}
+
+.wc-hero__logo {
+  height: clamp(72px, 9vw, 96px);
+  width: auto;
+}
+
+.wc-hero__lead {
+  max-width: 520px;
+  font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.5rem);
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.wc-hero .wc-body {
+  max-width: 520px;
+}
+
+.wc-hero__media {
+  flex: 1 1 380px;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.wc-hero__frame {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+}
+
+.wc-hero__frame img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  box-shadow: 0 24px 50px rgba(17, 17, 17, 0.18);
+}
+
+.wc-sticker {
+  position: absolute;
+  left: -28px;
+  bottom: 36px;
+  width: 128px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--card-yellow);
+  color: var(--black);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+  transform: rotate(-10deg);
+  box-shadow: 0 10px 24px rgba(17, 17, 17, 0.18);
+}
+
+/* Why */
+.wc-why {
+  background: var(--black);
+  color: var(--sand);
+}
+
+.wc-why__head,
+.wc-why__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wc-why__head {
+  gap: 1.25rem;
+}
+
+.wc-why__body {
+  gap: 1.5rem;
+}
+
+.wc-why .wc-eyebrow,
+.wc-why .wc-script {
+  color: var(--reef);
+}
+
+.wc-why__body > p:first-child {
+  font-size: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+  line-height: 1.6;
+  color: #e8e3d8;
+}
+
+/* How it works */
+.wc-arrowed {
+  position: relative;
+}
+
+.wc-arrow {
+  position: absolute;
+  left: calc(100% + 1.5rem);
+  top: 50%;
+  width: 160px;
+  height: 8px;
+  overflow: visible;
+  fill: none;
+  stroke: #8a8378;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.wc-arrow__head {
+  fill: #8a8378;
+  stroke: none;
+}
+
+.wc-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.wc-box {
+  background: var(--white);
+  border: 1.5px solid var(--wc-line);
+}
+
+.wc-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding: 2.25rem 2rem;
+}
+
+.wc-step__num {
+  font-size: 2.125rem;
+  font-weight: 700;
+  color: var(--ember);
+}
+
+.wc-step h3 {
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.wc-step p,
+.wc-use p {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--wc-muted);
+}
+
+/* Try a card */
+.wc-try {
+  background: var(--ocean);
+}
+
+.wc-try .wc-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.wc-card {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  padding: clamp(2.25rem, 9vw, 3.5rem);
+  border-radius: 50%;
+  background: var(--card-pink);
+  color: var(--black);
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.3);
+  transition: background-color 250ms ease;
+  user-select: none;
+}
+
+.wc-card:focus-visible {
+  outline: 3px solid var(--sand);
+  outline-offset: 6px;
+}
+
+.wc-card p {
+  font-size: clamp(1.25rem, 1rem + 1.4vw, 1.75rem);
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.wc-card span {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+
+/* Where */
+.wc-where__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.wc-where__intro p {
+  max-width: 620px;
+  font-size: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--wc-muted);
+}
+
+.wc-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.wc-photos img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.wc-uses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.wc-use {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding-top: 1.25rem;
+  border-top: 3px solid var(--black);
+}
+
+.wc-use h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* What's in the box */
+.wc-inside {
+  background: var(--white);
+  border-top: 1.5px solid var(--wc-line);
+  border-bottom: 1.5px solid var(--wc-line);
+}
+
+.wc-inside__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.wc-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1.125rem 0;
+  border-bottom: 1.5px solid var(--wc-line);
+  font-size: 1.0625rem;
+}
+
+.wc-row span:first-child,
+.wc-themes__title,
+.wc-theme__name {
+  font-weight: 600;
+}
+
+.wc-row span:last-child {
+  color: var(--wc-muted);
+}
+
+.wc-themes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.375rem 0;
+  border-bottom: 1.5px solid var(--wc-line);
+}
+
+.wc-themes__title {
+  font-size: 1.0625rem;
+}
+
+.wc-theme {
+  display: flex;
+  gap: 0.875rem;
+  align-items: flex-start;
+}
+
+.wc-theme > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.wc-dot {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  border-radius: 50%;
+}
+
+.wc-theme__q {
+  color: var(--wc-muted);
+  line-height: 1.5;
+}
+
+.wc-inside__media {
+  flex-basis: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  text-align: center;
+}
+
+.wc-inside__media img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Quote */
+.wc-quote {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--wc-space) clamp(1.25rem, 4vw, 2rem) 0;
+  text-align: center;
+}
+
+.wc-quote figure {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+  padding: clamp(2.5rem, 6vw, 4rem) clamp(1.5rem, 5vw, 3rem) clamp(2.25rem, 5vw, 3.5rem);
+  background: var(--white);
+  border: 1.5px solid var(--wc-line);
+  box-shadow: 0 18px 40px rgba(17, 17, 17, 0.08);
+}
+
+.wc-quote__mark {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16px;
+  border-radius: 50%;
+  background: var(--card-yellow);
+  color: var(--black);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.wc-quote blockquote {
+  margin: 0;
+  font-size: clamp(1.625rem, 1.2rem + 1.8vw, 2.5rem);
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.wc-quote figcaption {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ocean);
+}
+
+/* Closing CTA */
+.wc-close {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(4.5rem, 9vw, 8rem) clamp(1.25rem, 4vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.wc-close img {
+  width: 220px;
+  height: 220px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.wc-close > p:not(.wc-note) {
+  max-width: 560px;
+  font-size: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--wc-muted);
+}
+
+/* Footer */
+.wc-footer {
+  font-size: 15px;
+  color: var(--wc-muted);
+}
+
+.wc-footer p.wc-footer__script {
+  font-family: 'Amertha', cursive;
+  font-size: 26px;
+  line-height: 1.3;
+  color: var(--ocean);
+}
+
+@media (max-width: 1000px) {
+  .wc-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .wc-button {
+    padding: 0.875rem 1.5rem;
+    font-size: 1.0625rem;
+  }
+
+  .wc-sticker {
+    left: -8px;
+    bottom: 20px;
+    width: 104px;
+    height: 104px;
+    font-size: 15px;
+  }
+
+  .wc-close img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wc-card,
+  .wc-button {
+    transition: none;
+  }
+}
