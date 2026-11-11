@@ -12,7 +12,7 @@
   "hero": {
     "title": "WILD IDEAS",
     "subtitle": "A parent and child adventure to turn a wild idea into something real.",
-    "dates": "Friday 20 to Sunday 22 November 2026",
+    "dates": "Wednesday 3 to Friday 5 March 2027",
     "location": "Coolamon Station, Northern Rivers Hinterland, NSW",
     "attribution": "Created by Best Life Adventures and The Wonderists",
     "primaryCta": "Book your place",
@@ -35,9 +35,9 @@
     "statement": "Just the two of you building courage, capability and an idea together."
   },
   "facts": [
-    { "label": "Dates", "value": "20–22 Nov 2026" },
+    { "label": "Dates", "value": "3–5 Mar 2027" },
     { "label": "Stay", "value": "2 nights" },
-    { "label": "Price", "value": "$2,900 per pair" },
+    { "label": "Price", "value": "$3,500 per pair" },
     { "label": "Ages", "value": "8 to 14" }
   ],
   "futureSkills": {
@@ -53,7 +53,7 @@
     "caption": "Real challenge. Real decisions. Real growth."
   },
   "experience": {
-    "label": "Across the weekend",
+    "label": "Across the three days",
     "title": "Three days of wild ideas and real adventure.",
     "intro": "WILD IDEAS brings together hands-on adventure, meaningful parent-child connection and entrepreneurial learning in the spectacular Northern Rivers Hinterland.",
     "items": [
@@ -76,7 +76,7 @@
     "body": [
       "Every meaningful venture begins with someone paying attention.",
       "They notice a problem. They care about something that could be better. They ask a question other people haven’t asked yet.",
-      "Throughout the weekend, your child will explore what matters to them, look for problems worth solving and begin developing an age-appropriate venture of their own.",
+      "Over the three days, your child will explore what matters to them, look for problems worth solving and begin developing an age-appropriate venture of their own.",
       "It could be a product, a service, a community initiative, an environmental project or something wonderfully unexpected."
     ],
     "items": [
@@ -89,7 +89,7 @@
       "Receive constructive feedback from successful entrepreneurs",
       "Make decisions and adjust when something isn’t working",
       "Communicate their idea with greater confidence",
-      "Choose one practical next step to take after the weekend"
+      "Choose one practical next step to take after the adventure"
     ],
     "outro": "By the end of the adventure, they’ll have the beginnings of a venture, a plan for what comes next and something even more valuable: evidence that they can create, contribute and take action."
   },
@@ -103,7 +103,7 @@
           "Shared challenges create a different kind of connection.",
           "Building a shelter, navigating uncertainty and developing an idea require you to listen to each other, make decisions together and use both of your strengths.",
           "Your child experiences the feeling of having you fully beside them. You get to step into their imagination and see the world through their eyes.",
-          "The things you accomplish together become part of your shared story long after the weekend ends."
+          "The things you accomplish together become part of your shared story long after the adventure ends."
         ]
       },
       {
@@ -142,7 +142,7 @@
     "items": [
       "Three days of facilitated parent and child adventure",
       "Two nights of private glamping at Coolamon Station",
-      "All meals throughout the weekend",
+      "All meals across the three days",
       "Guided cycling on the Northern Rivers Rail Trail",
       "Specialist-led bushcraft and wilderness activities",
       "Shelter building, knot tying and fire craft",
@@ -152,7 +152,7 @@
       "Guided snorkelling experience",
       "Entrepreneurial workshops for parents and children",
       "Guided reflection and venture planning",
-      "Post-weekend entrepreneurial support sessions",
+      "Post-adventure entrepreneurial support sessions",
       "All required specialist equipment for programmed activities"
     ],
     "suitability": "Suitable for children aged 8 to 14."
@@ -219,10 +219,10 @@
   "booking": {
     "label": "Book your place",
     "title": "Make this your shared story.",
-    "dates": "Friday 20 to Sunday 22 November 2026",
+    "dates": "Wednesday 3 to Friday 5 March 2027",
     "location": "Coolamon Station, Northern Rivers Hinterland, NSW",
-    "price": "$2,900 per parent and child pair",
-    "includes": "Includes accommodation, all meals, scheduled activities, specialist-led experiences, entrepreneurial workshops and post-weekend support sessions.",
+    "price": "$3,500 per parent and child pair",
+    "includes": "Includes accommodation, all meals, scheduled activities, specialist-led experiences, entrepreneurial workshops and post-adventure support sessions.",
     "capacity": "Limited to 10 parent and child pairs.",
     "flyerCta": "Download the retreat flyer (PDF)",
     "flyerUrl": "/downloads/wild-ideas-retreat-flyer.pdf",
