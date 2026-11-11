@@ -75,15 +75,15 @@
         "description": "Leave the boardroom behind and head for one of the world’s most celebrated surf regions on a luxury boat. Days in the water. Evenings with an intimate group of entrepreneurs. Time to think, talk and remember what it feels like to be completely absorbed in something."
       },
       {
-        "id": "saudi-arabia",
+        "id": "seychelles",
         "number": "05",
-        "title": "Explore Saudi Arabia by motorbike",
-        "cta": "Explore Saudi Arabia",
+        "title": "A wild adventure in the Seychelles for curious families",
+        "cta": "Explore Seychelles",
         "href": "",
         "waitlist": true,
-        "date": "January 2028",
-        "image": "/assets/uganda.webp",
-        "description": "A motorcycle adventure across Saudi Arabia’s shifting dunes, ancient rock canyons and open desert highways. Ride through landscapes few outsiders ever see, share campfire nights under a wide desert sky and swap boardroom thinking for the kind of clarity you only find on the road."
+        "date": "June 2027",
+        "image": "/assets/header-coast.png",
+        "description": "In June 2027, we’re bringing entrepreneurs and their kids together in the Seychelles for an adventure built around four things: adventure, courage, impact and connection. Expect fresh experiences, brave little leaps, meaningful moments and the kind of conversations that bring families closer. A chance to step outside the ordinary, explore together and spark a few wild ideas of your own."
       },
       {
         "id": "argentina",
@@ -97,15 +97,15 @@
         "description": "An adventure through Argentina by motorbike and 4WD, from the vineyards of Mendoza to the wild roads of Patagonia. Ride or drive alongside a small group of entrepreneurs, trade the boardroom for the open road and let the landscape do some of the thinking for you."
       },
       {
-        "id": "seychelles",
+        "id": "saudi-arabia",
         "number": "07",
-        "title": "A wild adventure for curious families",
-        "cta": "Explore Seychelles",
+        "title": "Explore Saudi Arabia by motorbike",
+        "cta": "Explore Saudi Arabia",
         "href": "",
         "waitlist": true,
-        "date": "June 2027",
-        "image": "/assets/header-coast.png",
-        "description": "In June 2027, we’re bringing entrepreneurs and their kids together in the Seychelles for an adventure built around four things: adventure, courage, impact and connection. Expect fresh experiences, brave little leaps, meaningful moments and the kind of conversations that bring families closer. A chance to step outside the ordinary, explore together and spark a few wild ideas of your own."
+        "date": "January 2028",
+        "image": "/assets/uganda.webp",
+        "description": "A motorcycle adventure across Saudi Arabia’s shifting dunes, ancient rock canyons and open desert highways. Ride through landscapes few outsiders ever see, share campfire nights under a wide desert sky and swap boardroom thinking for the kind of clarity you only find on the road."
       }
     ]
   },
