@@ -50,9 +50,10 @@ const adventureCard = (adventure, featured = false) => `
     </div>
   </article>`;
 
+// Social links only show once they have a URL in src/content/home.json.
 const socialLink = (label, url) => url
   ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>`
-  : `<span>${escapeHtml(label)}</span>`;
+  : '';
 
 document.querySelector('#app').innerHTML = `
   <header class="site-header" data-header>
@@ -171,7 +172,7 @@ document.querySelector('#app').innerHTML = `
     <a class="brand brand--footer" href="#top" aria-label="Back to the top"><img src="/assets/wonderists-logo-primary.png" alt="The Wonderists" /></a>
     <div class="site-footer__social" aria-label="Social channels">
       ${socialLink(content.footer.instagramLabel, content.footer.instagramUrl)}
-      ${socialLink(content.footer.linkedinLabel, content.footer.linkedinUrl)}
+      ${socialLink(content.footer.facebookLabel, content.footer.facebookUrl)}
     </div>
     <p>© ${new Date().getFullYear()} The Wonderists</p>
   </footer>

@@ -186,8 +186,8 @@
   },
   "footer": {
     "instagramLabel": "Instagram",
-    "instagramUrl": "",
-    "linkedinLabel": "LinkedIn",
-    "linkedinUrl": ""
+    "instagramUrl": "https://www.instagram.com/thewonderists/",
+    "facebookLabel": "Facebook",
+    "facebookUrl": ""
   }
 }
