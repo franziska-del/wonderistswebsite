@@ -128,8 +128,11 @@
     "shipping": "A$39 per deck. Free shipping.",
     "cta": "Buy Wondercards — A$39",
     "checkoutUrl": "https://buy.stripe.com/bJe4gzeNk2VGgdqbWPawo03",
-    "image": "/assets/wondercards.webp",
-    "imageAlt": "Wondercards conversation card deck and four question cards"
+    "moreCta": "Explore Wondercards",
+    "image": "/assets/wondercards/hero-pink-card-window.jpg",
+    "imageAlt": "A hand holding a round pink Wondercard at a plane window",
+    "secondImage": "/assets/wondercards/yellow-card-sunflowers.jpg",
+    "secondImageAlt": "A yellow Wondercard held up among sunflowers"
   },
   "unspoken": {
     "title": "Say the\nthing.",

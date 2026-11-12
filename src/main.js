@@ -119,15 +119,26 @@ document.querySelector('#app').innerHTML = `
 
     <section class="wondercards" id="wondercards" aria-labelledby="wondercards-title">
       <div class="wondercards__copy reveal">
+        <p class="wondercards__name">Wondercards</p>
         <h2 id="wondercards-title">${escapeHtml(content.wondercards.title)}</h2>
+        <ul class="wondercards__dots" aria-hidden="true">
+          <li style="background: #f6ee64"></li><li style="background: #94e0ed"></li><li style="background: #f7a9e1"></li><li style="background: #a8dd76"></li><li style="background: #ffc05a"></li>
+        </ul>
         ${paragraphs(content.wondercards.body)}
         <p class="shipping">${escapeHtml(content.wondercards.shipping)}</p>
         <div class="button-row">
-          <a class="button button--sand" href="${escapeHtml(content.wondercards.checkoutUrl)}">${escapeHtml(content.wondercards.cta)}</a>
+          <a class="wondercards__buy" href="${escapeHtml(content.wondercards.checkoutUrl)}">${escapeHtml(content.wondercards.cta)}</a>
+          <a class="wondercards__more" href="/wondercards/">${escapeHtml(content.wondercards.moreCta)}</a>
         </div>
       </div>
       <div class="wondercards__media reveal">
-        <img src="${escapeHtml(content.wondercards.image)}" loading="lazy" alt="${escapeHtml(content.wondercards.imageAlt)}" />
+        <figure class="wondercards__photo wondercards__photo--main">
+          <img src="${escapeHtml(content.wondercards.image)}" loading="lazy" alt="${escapeHtml(content.wondercards.imageAlt)}" width="1050" height="1400" />
+          <span class="wondercards__sticker" aria-hidden="true">No small<br />talk.</span>
+        </figure>
+        <figure class="wondercards__photo wondercards__photo--side">
+          <img src="${escapeHtml(content.wondercards.secondImage)}" loading="lazy" alt="${escapeHtml(content.wondercards.secondImageAlt)}" width="600" height="800" />
+        </figure>
       </div>
     </section>
 
