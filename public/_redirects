@@ -1,4 +1,4 @@
 # Retired Next Gen URL — keep a HTTP 301 so Google does not index the old 200 + meta-refresh page.
-/next-gen /wild-ideas/ 301!
-/next-gen/ /wild-ideas/ 301!
-/next-gen/index.html /wild-ideas/ 301!
+/next-gen /wild-ideas/ 301
+/next-gen/ /wild-ideas/ 301
+/next-gen/index.html /wild-ideas/ 301
