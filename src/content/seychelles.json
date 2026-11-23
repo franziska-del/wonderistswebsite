@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "title": "Island of Possibility | A family retreat in the Seychelles",
+    "description": "Four nights on Praslin, Seychelles, 7–11 July 2027. A family retreat for entrepreneurial families with children aged 10–17, combining entrepreneurship, adventure, courage and connection."
+  },
+  "navigation": {
+    "experiences": "The experience",
+    "program": "Four nights",
+    "register": "Register your interest"
+  },
+  "hero": {
+    "eyebrow": "Big Ideas. Bare Feet. Brave Minds.",
+    "saveTheDate": "Save the date",
+    "title": "Island of Possibility",
+    "details": "7–11 July 2027 | Côte d’Or | Praslin, Seychelles",
+    "question": "What if your next family holiday could change the way your children see the world?",
+    "lead": "Four nights. One extraordinary island. A gathering of entrepreneurial families ready to explore, connect, create and make a difference.",
+    "primaryCta": "Register your interest",
+    "secondaryCta": "Explore the experience",
+    "note": "Limited places | Designed for families with children aged 10–17"
+  },
+  "intro": {
+    "label": "Welcome",
+    "body": [
+      "Welcome to Island of Possibility, a unique family retreat combining entrepreneurship, adventure, courage and meaningful connections in the beautiful Seychelles.",
+      "Join us for unforgettable experiences, inspiring people, exciting challenges and the perfect balance of adventure, connection and time to simply enjoy paradise."
+    ]
+  },
+  "facts": [
+    { "label": "Dates", "value": "7–11 Jul 2027" },
+    { "label": "Stay", "value": "4 nights" },
+    { "label": "Where", "value": "Praslin, Seychelles" },
+    { "label": "Ages", "value": "10 to 17" }
+  ],
+  "experiences": {
+    "label": "The experience",
+    "title": "Big Experiences. Bigger Possibilities.",
+    "items": [
+      {
+        "title": "Young Entrepreneurs, Big Ideas",
+        "body": "Kids work in teams to dream up ideas, solve real problems, experiment and create something extraordinary. Through fun, hands-on challenges, they’ll develop curiosity, creativity, confidence and an entrepreneurial mindset."
+      },
+      {
+        "title": "Adventure Beyond Your Comfort Zone",
+        "body": "Explore the wonders of the Seychelles, including a half-day adventure to Curieuse Island. Take on exciting courage challenges, try something new and discover what you’re capable of together."
+      },
+      {
+        "title": "Small Actions. Big Impact.",
+        "body": "What if we could leave the island better than we found it? Families will come together for an impact challenge, using creativity and entrepreneurial thinking to contribute to a meaningful social or environmental cause."
+      },
+      {
+        "title": "Raising the Next Generation",
+        "body": "While the kids are creating, parents connect through thought-provoking conversations about raising curious, courageous and independent thinkers. Share experiences, challenge perspectives and learn from other entrepreneurial families."
+      },
+      {
+        "title": "Connections That Last",
+        "body": "Meet like-minded families, build genuine friendships and share experiences that go beyond the retreat. From beach adventures to sunset dinners, some of the best moments won’t be on the itinerary."
+      }
+    ]
+  },
+  "balance": {
+    "label": "The perfect balance",
+    "title": "The Perfect Balance",
+    "intro": "We’ve deliberately created space for both extraordinary experiences and doing absolutely nothing.",
+    "items": [
+      { "title": "Be inspired.", "body": "Creative challenges and conversations that spark new perspectives." },
+      { "title": "Be adventurous.", "body": "Island excursions, courage challenges and unforgettable experiences." },
+      { "title": "Make a difference.", "body": "Work together on a meaningful impact initiative." },
+      { "title": "Connect.", "body": "Build friendships and create memories with your family and other entrepreneurs." },
+      { "title": "Just be.", "body": "Swim, explore, relax and enjoy the magic of the Seychelles." }
+    ],
+    "outro": "Everything is designed to be engaging, interactive and fun. No sitting through hours of presentations."
+  },
+  "program": {
+    "label": "The program",
+    "title": "Four Nights in Paradise",
+    "days": [
+      { "date": "7 July", "title": "Arrive & Connect", "body": "Settle into your accommodation and meet your fellow families over a relaxed welcome dinner." },
+      { "date": "8–10 July", "title": "Explore, Create & Discover", "body": "Three days blending entrepreneurial challenges, island adventures, meaningful conversations, family impact activities and plenty of free time." },
+      { "date": "11 July", "title": "Farewell Breakfast", "body": "Head home with new friendships, unforgettable memories and a renewed sense of possibility." }
+    ]
+  },
+  "package": {
+    "label": "Your retreat",
+    "title": "Your Retreat Experience",
+    "body": "Our planned package includes four nights’ accommodation, meals throughout the retreat, the young entrepreneurs’ program, parent experiences, organised excursions, family challenges and a special celebration evening.",
+    "note": "Final activities, inclusions and pricing will be communicated to those who have registered 2 days before bookings open.",
+    "cta": "Register your interest"
+  },
+  "closing": {
+    "label": "More than a holiday",
+    "title": "This Is More Than a Family Holiday.",
+    "body": "It’s an opportunity to inspire your children, connect with extraordinary families, challenge yourself and create memories that will last a lifetime.",
+    "statement": "The world is full of possibilities. Let’s explore them together."
+  },
+  "register": {
+    "label": "Island of Possibility",
+    "title": "Register your interest",
+    "details": "7–11 July 2027 | Praslin, Seychelles",
+    "body": "Places are limited. Register your interest to be among the first to receive package pricing, the full program and booking details.",
+    "tagline": "Big Ideas, Brave Minds and Bare Feet.",
+    "formCta": "Register your interest",
+    "success": "Thank you, you’re on the list. We’ll send you the package pricing, the full program and booking details before bookings open."
+  }
+}

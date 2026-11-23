@@ -79,11 +79,10 @@
         "number": "05",
         "title": "A wild adventure in the Seychelles for curious families",
         "cta": "Explore Seychelles",
-        "href": "",
-        "waitlist": true,
-        "date": "June 2027",
+        "href": "/seychelles/",
+        "date": "July 2027",
         "image": "/assets/header-coast.png",
-        "description": "In June 2027, we’re bringing entrepreneurs and their kids together in the Seychelles for an adventure built around four things: adventure, courage, impact and connection. Expect fresh experiences, brave little leaps, meaningful moments and the kind of conversations that bring families closer. A chance to step outside the ordinary, explore together and spark a few wild ideas of your own."
+        "description": "In July 2027, we’re bringing entrepreneurs and their kids together in the Seychelles for an adventure built around four things: adventure, courage, impact and connection. Expect fresh experiences, brave little leaps, meaningful moments and the kind of conversations that bring families closer. A chance to step outside the ordinary, explore together and spark a few wild ideas of your own."
       },
       {
         "id": "argentina",
