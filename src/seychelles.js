@@ -198,6 +198,7 @@ form.addEventListener('submit', (event) => {
   submitForm({
     form,
     subject: 'Island of Possibility (Seychelles) interest',
+    endpoint: 'https://formsubmit.co/ajax/franziska@basicbananas.com',
     successMessage: content.register.success,
     errorMessage: 'We couldn’t send your details. Please try again.',
   });

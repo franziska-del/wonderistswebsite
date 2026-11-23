@@ -1,6 +1,6 @@
-const endpoint = 'https://formsubmit.co/ajax/salty@oceanlovers.com';
+const defaultEndpoint = 'https://formsubmit.co/ajax/salty@oceanlovers.com';
 
-export const submitForm = async ({ form, subject, successMessage, errorMessage }) => {
+export const submitForm = async ({ form, subject, successMessage, errorMessage, endpoint = defaultEndpoint }) => {
   const button = form.querySelector('button[type="submit"]');
   const status = form.querySelector('[role="status"]');
   const originalButtonText = button.textContent;
