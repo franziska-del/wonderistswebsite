@@ -1,0 +1,272 @@
+/* Island of Possibility (Seychelles) landing page. Builds on next-gen.css. */
+
+.sy-eyebrow {
+  margin-bottom: 1.4rem;
+  color: var(--ember);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.sy-hero h1 {
+  max-width: 9ch;
+}
+
+.sy-hero__details {
+  margin-bottom: 1.6rem;
+  color: var(--ocean);
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.sy-hero__question {
+  font-weight: 500;
+}
+
+.sy-hero__lead {
+  max-width: 34rem;
+  font-size: clamp(1.05rem, 1.3vw, 1.25rem);
+}
+
+.sy-note {
+  margin: 1.4rem 0 0;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Illustrated, type-led panel in place of a photo */
+.sy-hero__panel {
+  position: relative;
+  min-height: calc(100svh - 6.6rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(2.5rem, 5vw, 5rem);
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--ocean-deep) 0%, var(--ocean) 58%, var(--reef) 100%);
+  color: var(--sand);
+}
+
+.sy-hero__sun {
+  position: absolute;
+  top: 52%;
+  right: 16%;
+  width: clamp(7rem, 14vw, 13rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--ember);
+  opacity: 0.92;
+}
+
+.sy-hero__motto {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.2em;
+  margin: 0;
+  font-size: clamp(2.4rem, 4.6vw, 5.2rem);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.sy-hero__motto span:nth-child(2) {
+  color: #8ed7dc;
+}
+
+.sy-hero__place {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.sy-hero__waves {
+  position: absolute;
+  inset: auto 0 0;
+  height: 32%;
+  background:
+    repeating-linear-gradient(
+      180deg,
+      rgba(245, 241, 232, 0.16) 0 2px,
+      transparent 2px 22px
+    );
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 60%);
+  mask-image: linear-gradient(180deg, transparent, #000 60%);
+}
+
+.sy-intro {
+  grid-template-columns: 0.45fr 2fr;
+}
+
+.sy-intro__copy {
+  max-width: 54rem;
+  font-size: clamp(1.2rem, 1.9vw, 1.8rem);
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+}
+
+.sy-experiences .wi-reason h3 {
+  font-size: clamp(1.9rem, 3.2vw, 3.4rem);
+}
+
+.sy-balance {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(3rem, 8vw, 9rem);
+  padding: var(--section-space) var(--page-gutter);
+  background: var(--ocean);
+  color: var(--sand);
+}
+
+.sy-balance__heading h2 {
+  margin: 2.3rem 0 2rem;
+  font-size: clamp(3.5rem, 6vw, 7.3rem);
+}
+
+.sy-balance__heading p {
+  max-width: 30rem;
+  font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+}
+
+.sy-balance__list {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid currentColor;
+}
+
+.sy-balance__list li {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid currentColor;
+  font-size: clamp(1.05rem, 1.4vw, 1.3rem);
+}
+
+.sy-balance__list strong {
+  color: #8ed7dc;
+  font-weight: 600;
+}
+
+.sy-balance__outro {
+  grid-column: 2;
+  max-width: 40rem;
+  margin: 0;
+  font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+  font-weight: 500;
+}
+
+.sy-program .ng-itinerary__intro {
+  grid-template-columns: 0.45fr 1.55fr;
+}
+
+.sy-day__body {
+  align-self: center;
+}
+
+.sy-day__body p {
+  max-width: 40rem;
+  margin: 0;
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.sy-package__copy {
+  align-self: center;
+}
+
+.sy-package__copy p {
+  max-width: 44rem;
+  font-size: clamp(1.15rem, 1.6vw, 1.5rem);
+}
+
+.sy-package__note {
+  color: #8ed7dc;
+  font-size: 1rem !important;
+  font-style: italic;
+}
+
+.sy-package__copy .button {
+  margin-top: 1rem;
+}
+
+.sy-closing {
+  padding: var(--section-space) var(--page-gutter);
+  background: var(--sand);
+  text-align: center;
+}
+
+.sy-closing__copy {
+  max-width: 58rem;
+  margin: 0 auto;
+}
+
+.sy-closing .ng-section-label::after {
+  margin-inline: auto;
+}
+
+.sy-closing h2 {
+  margin: 2.3rem 0 2rem;
+  font-size: clamp(3.4rem, 6.5vw, 7.5rem);
+}
+
+.sy-closing p {
+  max-width: 42rem;
+  margin-inline: auto;
+  font-size: clamp(1.15rem, 1.6vw, 1.5rem);
+}
+
+.sy-closing__statement {
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+  color: var(--ocean);
+  font-weight: 600;
+}
+
+.sy-register__tagline {
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.sy-register .ng-register__form input::placeholder {
+  color: rgba(245, 241, 232, 0.7);
+}
+
+@media (max-width: 1100px) {
+  .sy-intro {
+    grid-template-columns: 0.35fr 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .sy-hero__panel {
+    min-height: 30rem;
+  }
+
+  .sy-intro,
+  .sy-program .ng-itinerary__intro,
+  .sy-balance {
+    grid-template-columns: 1fr;
+  }
+
+  .sy-balance__outro {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .sy-hero__panel {
+    min-height: 24rem;
+  }
+
+  .sy-balance__heading h2,
+  .sy-closing h2 {
+    font-size: clamp(3rem, 13vw, 4.5rem);
+  }
+}
