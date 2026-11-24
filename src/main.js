@@ -66,7 +66,12 @@ document.querySelector('#app').innerHTML = `
     <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
       <a href="#adventures">${escapeHtml(content.navigation.adventures)}</a>
       <a href="/wondercards/">${escapeHtml(content.navigation.wondercards)}</a>
-      <a href="#unspoken">${escapeHtml(content.navigation.unspoken)}</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown__toggle" type="button" aria-expanded="false" aria-controls="nav-young-minds">${escapeHtml(content.navigation.youngMinds)}<span aria-hidden="true">▾</span></button>
+        <div class="nav-dropdown__menu" id="nav-young-minds">
+          ${content.navigation.youngMindsItems.map((item) => `<a href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>`).join('')}
+        </div>
+      </div>
       <a href="#philosophy">${escapeHtml(content.navigation.philosophy)}</a>
       <a href="/wonderlab/">Wonderlab</a>
       <button class="nav-cta js-contact" type="button">${escapeHtml(content.navigation.contact)}</button>
@@ -242,6 +247,23 @@ menuButton.addEventListener('click', () => {
 });
 
 nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+
+// "Young Minds" dropdown: opens on hover or focus on desktop, and on click or tap everywhere.
+const dropdownToggle = nav.querySelector('.nav-dropdown__toggle');
+const setDropdown = (isOpen) => dropdownToggle.setAttribute('aria-expanded', String(isOpen));
+dropdownToggle.addEventListener('click', (event) => {
+  event.stopPropagation();
+  setDropdown(dropdownToggle.getAttribute('aria-expanded') !== 'true');
+});
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.nav-dropdown')) setDropdown(false);
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && dropdownToggle.getAttribute('aria-expanded') === 'true') {
+    setDropdown(false);
+    dropdownToggle.focus({ preventScroll: true });
+  }
+});
 
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {

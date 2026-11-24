@@ -6,7 +6,10 @@
   "navigation": {
     "adventures": "Adventures",
     "wondercards": "Wondercards",
-    "unspoken": "Unspoken Cards",
+    "youngMinds": "Young Minds",
+    "youngMindsItems": [
+      { "label": "The Brighter Future Bunch", "href": "/brighterfuture/" }
+    ],
     "philosophy": "The Philosophy",
     "contact": "Say Hi"
   },

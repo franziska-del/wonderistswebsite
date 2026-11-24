@@ -237,6 +237,68 @@ h3 {
   display: none;
 }
 
+/* Main menu dropdown (Young Minds) */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+}
+
+.nav-dropdown__toggle span {
+  font-size: 0.7em;
+  transition: transform 200ms var(--ease);
+}
+
+.nav-dropdown__menu {
+  position: absolute;
+  top: calc(100% + 0.9rem);
+  left: -1.2rem;
+  display: grid;
+  min-width: 15rem;
+  padding: 1rem 1.2rem;
+  background: var(--sand);
+  box-shadow: 0 0 0 1px rgba(17, 17, 17, 0.12), 0 12px 30px rgba(17, 17, 17, 0.08);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-0.4rem);
+  transition: opacity 180ms ease, transform 180ms var(--ease), visibility 180ms ease;
+}
+
+/* Invisible bridge so the menu stays open while the pointer moves down to it */
+.nav-dropdown__menu::before {
+  content: '';
+  position: absolute;
+  inset: -0.9rem 0 auto;
+  height: 0.9rem;
+}
+
+.nav-dropdown:hover .nav-dropdown__menu,
+.nav-dropdown:focus-within .nav-dropdown__menu,
+.nav-dropdown__toggle[aria-expanded='true'] + .nav-dropdown__menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-dropdown:hover .nav-dropdown__toggle span,
+.nav-dropdown__toggle[aria-expanded='true'] span {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown__menu a {
+  white-space: nowrap;
+}
+
 .hero {
   min-height: 100svh;
   display: grid;
@@ -1110,6 +1172,37 @@ h3 {
   .site-nav a:focus-visible,
   .nav-cta:focus-visible {
     outline-offset: 0.35rem;
+  }
+
+  /* In the full-screen menu the dropdown sits open under its label */
+  .nav-dropdown__toggle {
+    max-width: 100%;
+    font-size: clamp(2.1rem, 10vw, 4.6rem);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    cursor: default;
+  }
+
+  .nav-dropdown__toggle span {
+    display: none;
+  }
+
+  .nav-dropdown__menu {
+    position: static;
+    min-width: 0;
+    padding: 0.6rem 0 0 0.15rem;
+    background: transparent;
+    box-shadow: none;
+    visibility: inherit;
+    opacity: 1;
+    transform: none;
+  }
+
+  .site-nav .nav-dropdown__menu a {
+    font-size: clamp(1.15rem, 4.6vw, 1.6rem);
+    letter-spacing: -0.01em;
+    white-space: normal;
   }
 
   .hero {
