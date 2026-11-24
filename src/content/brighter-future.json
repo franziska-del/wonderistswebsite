@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "The Brighter Future Bunch | A 10-week business program for kids aged 10 to 16",
+    "description": "A 10-week live online program where kids aged 10 to 16 turn a big idea into a real business, mentored by real entrepreneurs, and give part of their profits to help other kids access education. Starts 2 February 2027."
+  },
+  "navigation": {
+    "program": "The program",
+    "weeks": "The 10 weeks",
+    "mentors": "Mentors",
+    "apply": "Apply now"
+  },
+  "hero": {
+    "eyebrow": "A 10-week online program for young entrepreneurs aged 10 to 16",
+    "title": "The Brighter Future Bunch",
+    "question": "What happens when a curious kid gets to build something real?",
+    "lead": "Over ten weeks, kids turn a big idea into a real business, guided by entrepreneurs who’ve done it themselves.",
+    "motto": ["They’ll build it.", "They’ll brand it.", "They’ll launch it."],
+    "giveback": "And they’ll give part of their profits to help another child get an education.",
+    "primaryCta": "Apply now",
+    "secondaryCta": "See the 10 weeks",
+    "note": "Live online | Starts 2 February 2027"
+  },
+  "intro": {
+    "label": "Why it matters",
+    "title": "More than a business program.",
+    "body": [
+      "Most kids get asked what they want to be when they grow up. Far fewer get asked what they’d like to change.",
+      "This is where confidence, creativity and purpose start to grow. Kids learn to think like entrepreneurs: spotting problems, testing ideas, building something meaningful and seeing how their choices can make a real difference."
+    ]
+  },
+  "facts": [
+    { "label": "Length", "value": "10 weeks" },
+    { "label": "Where", "value": "Live online" },
+    { "label": "Ages", "value": "10 to 16" },
+    { "label": "Tuition", "value": "$490" }
+  ],
+  "learn": {
+    "label": "What they’ll learn",
+    "title": "Ten weeks, one real business.",
+    "intro": "Over ten weeks, students learn how to:",
+    "items": [
+      "Spot real-world problems worth solving",
+      "Research the market and test ideas",
+      "Build a product or service",
+      "Create a brand name, logo and tagline",
+      "Understand marketing, social media and promotion",
+      "Build a landing page using AI",
+      "Pitch and sell (with real practice)",
+      "Budget, price and understand profit",
+      "Give part of their profits to help other kids access education",
+      "Use AI tools with curiosity and care"
+    ]
+  },
+  "giveback": {
+    "label": "The giveback",
+    "title": "Business with heart.",
+    "body": [
+      "Every student builds a business with a mission. Entrepreneurship isn’t only about making money. It’s about making change.",
+      "Students give part of their profits to help other children access education, so their success opens a door for someone else too."
+    ],
+    "statement": "Every enrolment also supports a young entrepreneur at School for Life in Uganda."
+  },
+  "how": {
+    "label": "How it works",
+    "title": "A simple weekly rhythm.",
+    "items": [
+      { "title": "Weekly modules", "body": "A short, guided introduction to each week’s topic, pre-recorded and made for kids to follow on their own." },
+      { "title": "Live mentor session", "body": "Each week, business owners mentor students, answer questions and give feedback as they build. Students become part of a community of like-minded peers who encourage and inspire each other." },
+      { "title": "Guest mentors", "body": "Successful entrepreneurs and innovators drop in to share what they’ve learnt about building something that matters." },
+      { "title": "Showcase & Celebration Day", "body": "Students present their businesses, celebrate how far they’ve come and get recognised for their impact, with opportunities for partnerships." }
+    ]
+  },
+  "audience": {
+    "label": "Who it’s for",
+    "title": "Curious is enough.",
+    "intro": "The Brighter Future Bunch is for kids aged 10 to 16 who:",
+    "items": [
+      "Have big ideas and want to build something real",
+      "Love creativity, problem-solving and learning new skills",
+      "Want to feel more confident speaking and sharing ideas",
+      "Are curious about business, AI and marketing",
+      "Want to create something that makes a difference"
+    ],
+    "outro": "No experience needed. Just curiosity and a willingness to try new things."
+  },
+  "weeks": {
+    "label": "The 10 weeks",
+    "title": "From a big idea to launch day.",
+    "items": [
+      { "title": "Testing your ideas", "body": "Spot problems worth solving, research what already exists and use feedback to shape an idea. Plus a first look at how a business can give back." },
+      { "title": "Customer research", "body": "Who will buy it, and why? Students explore buying habits and create their first customer persona." },
+      { "title": "Building your prototype", "body": "Turn the idea into a product or service, then test it with mentors and peers." },
+      { "title": "Brand strategy", "body": "A purpose statement, a business name, a logo and a tagline, designed with AI and Canva." },
+      { "title": "Marketing magic: your landing page", "body": "An introduction to marketing and the numbers that matter, then a simple landing page built with AI, ready for pre-orders or a waiting list." },
+      { "title": "The Marketing Ecosystem™", "body": "How all the pieces of marketing fit together, and why that matters." },
+      { "title": "Social media and AI content", "body": "Social accounts, a content plan and first posts made with AI, plus paid strategies and partnerships." },
+      { "title": "Sales and pitching", "body": "Learn to pitch, practise it and see how every sale can help create change." },
+      { "title": "Money matters", "body": "Budgeting, pricing, profit and donations, brought together in a simple business budget." },
+      { "title": "Showcase & Celebration Day", "body": "Students pitch their business and its giveback to mentors, families and judges, and get feedback and recognition." }
+    ]
+  },
+  "mentors": {
+    "label": "Your mentors",
+    "title": "Mentored by real entrepreneurs.",
+    "intro": "The program is led by Franziska Iseli and Christo Hall, joined by entrepreneurial friends who help with specific topics.",
+    "items": [
+      {
+        "name": "Franziska Iseli",
+        "body": [
+          "Franziska is a maverick entrepreneur who believes business is one of the most powerful tools we have to create meaningful change. She co-founded Basic Bananas, Oceanlovers and Moments of Humanity, and has led impact initiatives at the United Nations.",
+          "Awarded Young Entrepreneur of the Year and the author of four bestselling books, including The Courage Map (with a foreword by Richard Branson), she brings infectious energy and a deep passion for helping young people stay curious, think creatively and build businesses that make a difference."
+        ]
+      },
+      {
+        "name": "Christo Hall",
+        "body": [
+          "Christo is the co-founder of Basic Bananas, Australia’s leading marketing mentoring organisation for business owners. He’s been featured on The Today Show, 2UE and 2GB radio, Virgin inflight entertainment and TEDx.",
+          "A highly sought-after business mentor, he has a sixth sense for business and a rare ability to move from big-picture vision to the finest detail."
+        ]
+      },
+      {
+        "name": "Joel Farmer",
+        "body": [
+          "Joel is the founder of Scale My Business. For more than 25 years he’s turned big ideas into thriving businesses, grown teams of 40+ people and helped business owners around the world do the same.",
+          "As the dad of two entrepreneurial sons, he knows how to break down the secrets of successful businesses in ways that are fun, practical and genuinely exciting."
+        ]
+      },
+      {
+        "name": "Nic Thomas",
+        "body": [
+          "Nic is an educator and entrepreneur at Scope Training who believes curiosity and problem-solving are the foundations of every great business idea.",
+          "He knows the best entrepreneurs aren’t just born with big ideas. They’re kids who ask great questions and never stop exploring what’s possible. When he’s not mentoring, you’ll find him travelling or catching a wave."
+        ]
+      }
+    ]
+  },
+  "about": {
+    "label": "Who’s behind it",
+    "title": "Created by The Wonderists with Basic Bananas.",
+    "body": [
+      "The Wonderists is a community and collection of experiences for people who want to live with more curiosity, courage and connection. We believe being alive and feeling alive aren’t the same thing, and that kids deserve to learn how to question, explore and build for themselves.",
+      "Basic Bananas is Australia’s leading marketing and AI training organisation, founded in 2009 by Franziska Iseli and Christo Hall. They’ve helped thousands of business owners around the world with practical, strategic frameworks, and now they’re bringing that experience to the next generation."
+    ]
+  },
+  "faq": {
+    "label": "Questions",
+    "title": "Good questions, answered.",
+    "items": [
+      { "q": "How old does my child need to be?", "a": ["The program is designed for kids aged 10 to 16 (younger can work too) who are ready to learn independently and join group discussions. Not sure if it’s the right fit? Get in touch and we’ll help you decide."] },
+      { "q": "Does my child need a business idea before joining?", "a": ["Nope. That’s part of the magic. We guide students step by step through finding a problem they care about and turning it into a business idea."] },
+      { "q": "What kind of businesses can kids create?", "a": ["A product, a service or a small online business. Some kids make handmade products, digital downloads, simple services or community ideas. The focus is on learning the process, not perfection."] },
+      { "q": "Is the program live or self-paced?", "a": ["Both. Each week includes a pre-recorded module (15 to 30 minutes) and a live mentor session (45 to 60 minutes), so kids are supported while still having flexibility."] },
+      { "q": "How much time does it take each week?", "a": ["Most students spend around 2 to 3 hours a week across the module, the live session and working on their business."] },
+      { "q": "Do parents need to be involved?", "a": ["Not heavily. Many kids complete the program on their own, though younger students may need occasional help with things like setting up tools, uploading work or brainstorming."] },
+      { "q": "What if my child is shy or nervous about pitching?", "a": ["Totally normal, and one of the best reasons to join. We teach pitching in a supportive way, in small steps, so confidence builds naturally."] },
+      { "q": "Will my child actually launch a real business?", "a": ["Yes. By the end of the 10 weeks, students will have a clear business idea, a brand identity, a basic marketing plan, a landing page or social presence, pitching experience and a plan for their donations. Some launch during the program, others shortly after."] },
+      { "q": "Who are the mentors?", "a": ["Franziska Iseli, Christo Hall and the Basic Bananas team, along with other successful entrepreneurs and guest collaborators."] },
+      { "q": "What is the giveback?", "a": ["Students donate a portion of their profits to help other children access education, and learn how to build giving into their business model."] },
+      { "q": "Is it suitable for kids with no marketing experience?", "a": ["Yes. Everything is taught from the beginning, in a kid-friendly way, with tools like Canva and age-appropriate AI support."] },
+      { "q": "What do students need?", "a": ["A computer or tablet, internet access and a willingness to try new things."] },
+      { "q": "What happens at Showcase & Celebration Day?", "a": ["It’s a live showcase where students present their business to mentors, families and judges. A celebration of effort, creativity and impact, not a high-pressure competition."] },
+      { "q": "What if we miss a live session?", "a": ["No stress. Live sessions are strongly encouraged, but students can catch up with the weekly module and keep building at their own pace."] },
+      { "q": "How do we enrol?", "a": ["Fill in the application form below and we’ll be in touch with next steps."] }
+    ]
+  },
+  "apply": {
+    "label": "Apply now",
+    "title": "Ready to raise a future entrepreneur?",
+    "body": "Give your child the skills, confidence and mentorship to launch a real business, and to discover how their success can help others.",
+    "details": [
+      "10 weeks. Live online. Mentored by real entrepreneurs.",
+      "Tuition: $490, including support for a young entrepreneur at School for Life in Uganda.",
+      "Ages: 10 to 16",
+      "Kick-off: 2 February 2027, 4.15pm to 5pm AEDT"
+    ],
+    "formCta": "Send my application",
+    "success": "Thank you! Your application is on its way. We’ll be in touch soon with next steps."
+  }
+}
