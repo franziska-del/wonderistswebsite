@@ -85,8 +85,18 @@
         "description": "In July 2027, we’re bringing entrepreneurs and their kids together in the Seychelles for an adventure built around four things: adventure, courage, impact and connection. Expect fresh experiences, brave little leaps, meaningful moments and the kind of conversations that bring families closer. A chance to step outside the ordinary, explore together and spark a few wild ideas of your own."
       },
       {
-        "id": "argentina",
+        "id": "brighter-future",
         "number": "06",
+        "title": "The Brighter Future Bunch: a business program for kids",
+        "cta": "Explore the program",
+        "href": "/brighterfuture/",
+        "date": "From February 2027",
+        "image": "/assets/next-gen/navigation.jpg",
+        "description": "A 10-week live online program where kids aged 10 to 16 turn a big idea into a real business, mentored by real entrepreneurs. They’ll build it, brand it and launch it, and give part of their profits to help another child get an education."
+      },
+      {
+        "id": "argentina",
+        "number": "07",
         "title": "Explore Argentina by motorbike and 4WD",
         "cta": "Explore Argentina",
         "href": "",
@@ -97,7 +107,7 @@
       },
       {
         "id": "saudi-arabia",
-        "number": "07",
+        "number": "08",
         "title": "Explore Saudi Arabia by motorbike",
         "cta": "Explore Saudi Arabia",
         "href": "",
