@@ -40,18 +40,16 @@ document.querySelector('#app').innerHTML = `
         <div class="ng-hero__rule" aria-hidden="true"></div>
         <p class="ng-hero__lead sy-hero__question reveal">${escapeHtml(content.hero.question)}</p>
         <p class="sy-hero__lead reveal">${escapeHtml(content.hero.lead)}</p>
+        <p class="bf-hero__motto reveal">${content.hero.motto.map((line) => `<span>${escapeHtml(line)}</span>`).join(' ')} ${escapeHtml(content.hero.giveback)}</p>
         <div class="button-row reveal">
           <a class="button button--primary" href="#apply">${escapeHtml(content.hero.primaryCta)}</a>
           <a class="button button--outline" href="#weeks">${escapeHtml(content.hero.secondaryCta)}</a>
         </div>
         <p class="sy-note reveal">${escapeHtml(content.hero.note)}</p>
       </div>
-      <div class="sy-hero__panel bf-hero__panel">
-        <div class="bf-hero__sun" aria-hidden="true"></div>
-        <p class="sy-hero__motto">${content.hero.motto.map((line) => `<span>${escapeHtml(line)}</span>`).join('')}</p>
-        <p class="bf-hero__giveback">${escapeHtml(content.hero.giveback)}</p>
-        <div class="sy-hero__waves" aria-hidden="true"></div>
-      </div>
+      <figure class="ng-hero__media bf-hero__media">
+        <img src="${escapeHtml(content.hero.image)}" alt="${escapeHtml(content.hero.imageAlt)}" />
+      </figure>
     </section>
 
     <section class="ng-intro bf-intro" id="program" aria-labelledby="intro-title">
@@ -132,9 +130,9 @@ document.querySelector('#app').innerHTML = `
         <p>${escapeHtml(content.mentors.intro)}</p>
       </header>
       <div class="wi-hosts__list">
-        ${content.mentors.items.map((mentor, index) => `
-          <article class="wi-host reveal">
-            <span>${pad(index)}</span>
+        ${content.mentors.items.map((mentor) => `
+          <article class="wi-host bf-mentor reveal">
+            <img class="bf-mentor__photo" src="${escapeHtml(mentor.image)}" alt="${escapeHtml(mentor.name)}" loading="lazy" />
             <h3>${escapeHtml(mentor.name)}</h3>
             <div>${paragraphs(mentor.body)}</div>
           </article>`).join('')}
