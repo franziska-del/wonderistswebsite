@@ -180,6 +180,17 @@ document.querySelector('#app').innerHTML = `
         <p class="form-status" role="status" aria-live="polite"></p>
       </form>
     </section>
+
+    <section class="bf-schools" aria-labelledby="schools-title">
+      <div class="bf-schools__inner reveal">
+        <div>
+          <div class="ng-section-label">${escapeHtml(content.schools.label)}</div>
+          <h2 id="schools-title">${escapeHtml(content.schools.title)}</h2>
+          <p>${escapeHtml(content.schools.body)}</p>
+        </div>
+        <a class="button button--primary" href="${escapeHtml(content.schools.href)}">${escapeHtml(content.schools.cta)}</a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
