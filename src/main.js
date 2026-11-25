@@ -312,6 +312,11 @@ document.querySelectorAll('.js-contact').forEach((button) => {
   });
 });
 
+// Links like /#contact (e.g. from the Brighter Future page) open the "Say hi" form.
+if (window.location.hash === '#contact') {
+  document.querySelector('.js-contact')?.click();
+}
+
 document.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', (event) => {
   const box = dialog.getBoundingClientRect();

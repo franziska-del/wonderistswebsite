@@ -160,3 +160,40 @@
 .brighter-future-page .bf-about .sy-balance__heading h2 {
   font-size: clamp(2.4rem, 3.6vw, 4.2rem);
 }
+
+/* Schools banner at the bottom of the page */
+.brighter-future-page .bf-schools {
+  padding: clamp(3rem, 6vw, 5rem) var(--page-gutter);
+  background: #ebe4d4;
+}
+
+.brighter-future-page .bf-schools__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem 3rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.brighter-future-page .bf-schools h2 {
+  margin: 0.4rem 0 0.8rem;
+  font-size: clamp(2rem, 3.4vw, 3.4rem);
+}
+
+.brighter-future-page .bf-schools p {
+  max-width: 38rem;
+  margin: 0;
+  font-size: clamp(1.05rem, 1.3vw, 1.25rem);
+}
+
+.brighter-future-page .bf-schools .button {
+  flex-shrink: 0;
+}
+
+@media (max-width: 820px) {
+  .brighter-future-page .bf-schools__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -298,5 +298,12 @@
     ],
     "formCta": "Send my application",
     "success": "Thank you! Your application is on its way. We’ll be in touch soon with next steps."
+  },
+  "schools": {
+    "label": "For schools",
+    "title": "Want to bring this to your school?",
+    "body": "We’d love to bring The Brighter Future Bunch into more classrooms. Let’s chat about what it could look like for your students.",
+    "cta": "Let’s chat",
+    "href": "/#contact"
   }
 }
